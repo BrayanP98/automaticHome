@@ -14,7 +14,10 @@
     align-items: center;
     gap: 25px;
     justify-content: center;
-  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#solutions h2{
+    color: gray;
 }
 #cont_solutions{
     position: relative;
@@ -74,7 +77,7 @@
     right: 0;
     border: 0;
     background: none;
-    
+    cursor: pointer;
 }
 #whatsapp box-icon{
    width: 80px;
@@ -119,7 +122,7 @@
 }
 #cotizar button{
 position: relative;
-    width: 200px;
+    width: 250px;
     height:80px;
    left: 100px;
    background: rgba(231, 99, 51, 0.701);
@@ -132,4 +135,7 @@ position: relative;
 #cotizar button:hover{
   background:  rgba(237, 102, 52, 0.812);
   cursor: pointer;
+}
+#cotizar button box-icon{
+    vertical-align: middle;
 }

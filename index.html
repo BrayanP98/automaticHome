@@ -173,7 +173,7 @@
             COTIZACION PERSONALIZADA SEGUN TU NECECESIDAD
         </h2>
         <p>Si tiene en planificación un proyecto que incluye tecnología avanzada y no sabe por dónde empezar o cómo poder implementar en su empresa, con las mejores garantías, fiabilidad y un control sencillo y eficaz. Tenemos a su disposición nuestra entrevista de diagnóstico en la cuál le orientamos sobre las mejores opciones para su proyecto.</p>
-        <button>Solicitar Cotizacion</button>
+       <a href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor" target="_blank"> <button><box-icon name='edit' color='#f1e7e7' ></box-icon></box-icon>Solicitar Cotizacion</button></a>
     </div>
    
 </section>
@@ -209,12 +209,15 @@
 
         font-size: 40px;
     }
+    #img_pros::after{
+        transition: all 1s ease-out;
+    }
     #img_pros{
         position: relative;
         width: 70%;
         height: 400px;
         border-radius: 20px;
-        transition: 1s ease-in;
+        transition: all 1s ease-out;
 
     }
     #selecPros{
@@ -237,6 +240,9 @@
  font-size: 20px;
  color: rgb(51, 49, 49);
  font-weight: bolder;
+   }
+   .button_pros:hover{
+    background-color: rgba(69, 64, 64, 0.375);
    }
    #description_pros{
     position: relative;
@@ -301,7 +307,7 @@
     }
 </script>
 </div>
-<button id="whatsapp"><box-icon name='whatsapp' type='logo' color='#43f111' ></box-icon></button>
+<a href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button id="whatsapp"><box-icon name='whatsapp' type='logo' color='#43f111' ></box-icon></button></a>
 
 
     
