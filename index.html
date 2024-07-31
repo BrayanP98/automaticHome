@@ -182,12 +182,13 @@
 <img id="img_pros" src="https://lh3.googleusercontent.com/6HBeKh5k2WMGH1mAUQAhnu-zZXf8-GN1U0WaVYNq19cCB2S7oNi_OUpoy2MjTHdbT5TPAsaoLEuvgnn6cq074NIGETR1Q9dz998=rw-e365-nu-w1500" alt="">
 <div id="selecPros">
 
-    <button class="button_pros">Sepa lo que está sucediendo, las 24 horas del día.</button>
-    <button class="button_pros">Controla tu casa, incluso cuando estés lejos.</button>
-    <button class="button_pros">Revise el historial de la cámara desde su navegador.</button>
+    <button class="button_pros" id="button_pros1">Sepa lo que está sucediendo, las 24 horas del día.</button>
+    <button class="button_pros" id="button_pros2">Controla tu casa, incluso cuando estés lejos.</button>
+    <button class="button_pros" id="button_pros3">Revise el historial de la cámara desde su navegador.</button>
 </div>
-
+<p id="description_pros">Los timbres y las cámaras Nest pueden detectar la diferencia entre una persona, un animal y un vehículo. Serás el primero en saberlo, con notificaciones de actividades importantes.</p>
 </section>
+
 
 <style>
     #pros{
@@ -227,7 +228,58 @@
  color: rgb(51, 49, 49);
  font-weight: bolder;
    }
+   #description_pros{
+    position: relative;
+    width: 40%;
+    height: fit-content;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+   }
 </style>
+<script>
+
+    var pros=[
+    
+    {
+        id:"button1",
+        img:"",
+        parrafo:""
+
+    },
+    {
+        id:"button2",
+        img:"",
+        parrafo:""
+
+    },
+    {
+        id:"button3",
+        img:"",
+        parrafo:""
+
+    },
+    ]
+    var button_pros1=document.querySelector("#button_pros1")
+    var button_pros2=document.querySelector("#button_pros2")
+    var button_pros3=document.querySelector("#button_pros3")
+    var img_pros=document.querySelector("#img_pros")
+    var description_pros=document.querySelector("#description_pros")
+    button_pros1.onclick=function(){
+        img_pros.setAttribute("src","https://lh3.googleusercontent.com/6HBeKh5k2WMGH1mAUQAhnu-zZXf8-GN1U0WaVYNq19cCB2S7oNi_OUpoy2MjTHdbT5TPAsaoLEuvgnn6cq074NIGETR1Q9dz998=rw-e365-nu-w1500")
+       description_pros.innerHTML="Los timbres y las cámaras Nest pueden detectar la diferencia entre una persona, un animal y un vehículo. Serás el primero en saberlo, con notificaciones de actividades importantes."
+    }
+    button_pros2.onclick=function(){
+
+       img_pros.setAttribute("src","https://lh3.googleusercontent.com/InpislWF4opK-HjHhTiQ7kSxVpp0pLiqbFQmcMr7J1w4PXfe4hg6dAkVOU4ordi6bXoqwOd200JYFS0BqVFuTNrIa9YnAbygfLE=rw-e365-nu-w1500")
+    description_pros.innerHTML="Controla tus cámaras Nest y tu timbre Nest con la aplicación Google Home. Ahora puedes estar en cualquier lugar y seguir informado."
+    }
+    button_pros3.onclick=function(){
+        img_pros.setAttribute("src"," https://lh3.googleusercontent.com/OBumTPFbXpA9dewx9-aK0IfsRB0L1I4y5nr8RwEDDCkCxdD8CkATj2O3PFe3UvYtxau4WibcqENph7YA7xBVWHdHhqH96GJYHK8=rw-e365-nu-w1500")
+       description_pros.innerHTML="Puede ver el historial de su cámara como eventos o en una línea de tiempo, además de descargar clips directamente desde su navegador.s"
+    }
+</script>
 </div>
 <button id="whatsapp"><box-icon name='whatsapp' type='logo' color='#43f111' ></box-icon></button>
 
