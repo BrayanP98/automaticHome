@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="/styless/style.css">
+    <title>AutomaticHome</title>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <div id="desplegable">
+                <a href="">Automatic home solutions</a>
+                <button id="btn_desplegar"><box-icon name='chevron-down' type='solid' flip='horizontal' color='#5d5454' ></box-icon></button>
+            </div>
+            <div id="subMenu">
+                <div id="cont_subMenu">
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Smart home OS</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href=""> En toda la vivienda</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">luminacoin inteligente</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Stranquilidad</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">video portero en cualquier parte</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">cine en casa</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Audion multihabitacion</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Mando a distancia universal</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Control por voz</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Catalogo de productos</a></div>
+                </div>
+               
+
+            </div>
+           
+
+        </div>
+
+        <script>
+
+            var btn_despegar= document.getElementById("btn_desplegar");
+            var div_menu= document.getElementById("menu")
+            var div_subMenu= document.getElementById("subMenu")
+            btn_despegar.onclick= function(){
+                div_menu.classList.toggle("active")
+
+                div_subMenu.classList.toggle("visible")
+
+                
+            }
+        </script>
+<style>
+    #menu{
+        width: 99%;
+        height: 50px;
+       
+        transition: all 1s ease-out;
+       overflow: hidden;
+       background-color: white;
+       z-index: 99;
+       position: absolute;
+    }
+    #desplegable{
+        width: 250px;
+        height: 20px;
+       
+        
+    }
+    #desplegable button{
+        background: none;
+        border: none;
+        color: gray;
+    }
+    #desplegable button box-icon {
+        vertical-align: middle;
+        color: white;
+    }
+    #menu.active{
+        height: fit-content;
+        transition: all 1s ease-out;
+
+    }
+
+    #menu a{
+        text-decoration: none;
+        color: rgb(214, 27, 27);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #subMenu{
+        width: 100%;
+        height: fit-content;
+       
+       opacity: 0;
+        transition: all 1s ease-out;
+        
+        justify-content: center; display: flex;
+        flex-direction: row;
+        
+        padding-top: 25px;
+       
+    }
+    #subMenu.visible{
+        opacity: 1;
+        transition: all 1s ease-out;
+       
+    }
+    #cont_subMenu{
+        width: 50%;
+        height: fit-content;
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 55px;
+        justify-content: center;
+       
+    }
+    .items{
+        width: 100px;
+        height: fit-content;
+        background: white;
+        text-align: center;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        
+    }
+    .items a{
+        color: black;
+    }
+    .items img{
+        width: 50px;
+        padding: 10px;
+        border-radius: 50px;
+        border-style:double;
+        border-color: red;
+        height: 40px;
+        
+        
+    }
+    .items img:hover{
+        background: red;
+        transform: scale(1.1);
+        transition: all 0.5s ease-out;   
+        opacity: 0.8; 
+    }
+    
+</style>
+
+    </header>
+<div class="conrainer">
+    <video src="https://cdn.savant.com/video/9027_Savant_AnthemVideo_SHORT.m4v" preload="auto" playsinline="" webkit-playsinline="" x5-playsinline="" style="width: 100%; height: 100%;" controls autoplay loop></video>
+
+<section id="solutions">
+    <h2>Soluciones personalizadas</h2>
+    <div id="cont_solutions">
+        <div class="item_solution" style="background-image: url('https://ai-previews.123rf.com/ai-variation/preview/wm/welcomia/welcomia2102/welcomia210200002_0.jpg');">
+        
+            <button class="button_solution"> <box-icon name='menu'  color= 'white' ></box-icon>seguridad electronica</button>
+        </div>
+        <div class="item_solution" style="background-image: url('https://ai-previews.123rf.com/ai-variation/preview/wm/welcomia/welcomia2102/welcomia210200002_0.jpg');">
+            <button class="button_solution"><box-icon name='menu' color= 'white' ></box-icon>seguridad electronica</button>
+        </div>
+        <div class="item_solution" style="background-image: url('https://ai-previews.123rf.com/ai-variation/preview/wm/welcomia/welcomia2102/welcomia210200002_0.jpg');">
+            <button class="button_solution"><box-icon name='menu' color= 'white' ></box-icon>seguridad electronica</button>
+        </div>
+        <div class="item_solution" style="background-image: url('https://ai-previews.123rf.com/ai-variation/preview/wm/welcomia/welcomia2102/welcomia210200002_0.jpg');">
+            <button class="button_solution"><box-icon name='menu' color= 'white'></box-icon>seguridad electronica</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+</div>
+<button id="whatsapp"><box-icon name='whatsapp' type='logo' color='#43f111' ></box-icon></button>
+
+
+    
+</body>
+</html>
