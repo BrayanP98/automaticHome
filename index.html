@@ -190,13 +190,13 @@
 
 <h3>Energía y ahorro</h3>
 <h2>Haz del ahorro de energía una rutina diaria.</h2>
-<img id="img_pros" src="https://lh3.googleusercontent.com/6HBeKh5k2WMGH1mAUQAhnu-zZXf8-GN1U0WaVYNq19cCB2S7oNi_OUpoy2MjTHdbT5TPAsaoLEuvgnn6cq074NIGETR1Q9dz998=rw-e365-nu-w1500" alt="">
+<img id="img_pros1" src="https://escuderodissenyblog.com/wp-content/uploads/2022/12/termostato-de-google.jpg?w=1845&h=762&crop=1" alt="">
 
 <div class="selecPros">
 
-    <button class="button_pros" id="button_pros1">Comodidad ecológica</button>
-    <button class="button_pros" id="button_pros2">Aprovecha una energía más limpia o menos costosa.</button>
-    <button class="button_pros" id="button_pros3">Detecte muchos problemas del sistema HVAC a tiempo.</button>
+    <button class="button_pros" id="button_pros1_1">Comodidad ecológica</button>
+    <button class="button_pros" id="button_pros1_2">Aprovecha una energía más limpia o menos costosa.</button>
+    <button class="button_pros" id="button_pros1_3">Detecte muchos problemas del sistema HVAC a tiempo.</button>
 </div>
 <p id="description_pros">Los timbres y las cámaras Nest pueden detectar la diferencia entre una persona, un animal y un vehículo. Serás el primero en saberlo, con notificaciones de actividades importantes.</p>
 
@@ -225,7 +225,7 @@
     #img_pros::after{
         transition: all 1s ease-out;
     }
-    #img_pros{
+    #img_pros,#img_pros1{
         position: relative;
         width: 70%;
         height: 400px;
@@ -318,10 +318,51 @@
       button_pros1.style="border-bottom: none;"
       button_pros2.style="border-bottom: none;"
     }
+
+
+
+
+    var button_pros1_1=document.querySelector("#button_pros1_1")
+    var button_pros1_2=document.querySelector("#button_pros1_2")
+    var button_pros1_3=document.querySelector("#button_pros1_3")
+    var img_pros1=document.querySelector("#img_pros1")
+    button_pros1_1.onclick=function(){
+        img_pros1.setAttribute("src","https://escuderodissenyblog.com/wp-content/uploads/2022/12/termostato-de-google.jpg?w=1845&h=762&crop=")
+       description_pros.innerHTML="Los timbres y las cámaras Nest pueden detectar la diferencia entre una persona, un animal y un vehículo. Serás el primero en saberlo, con notificaciones de actividades importantes."
+     this.style="border-bottom: 3px solid rgb(64, 62, 62);"
+     button_pros1_2.style="border-bottom: none;"
+      button_pros1_3.style="border-bottom: none;"
+      
+    
+    }
+    button_pros1_2.onclick=function(){
+        img_pros1.setAttribute("src","https://lh3.googleusercontent.com/diksUNfRCmtsUCRWT85cNznaLUNTleK3O3-EV42TGJZAWULE_nK8hLmRiTNryYTpA7bm_c0X3fvcEhWdCJ1Sy4RHFRefnakKig=rw-e365-nu-w1500")
+       description_pros.innerHTML="Los timbres y las cámaras Nest pueden detectar la diferencia entre una persona, un animal y un vehículo. Serás el primero en saberlo, con notificaciones de actividades importantes."
+     this.style="border-bottom: 3px solid rgb(64, 62, 62);"
+     button_pros1_1.style="border-bottom: none;"
+      button_pros1_3.style="border-bottom: none;"
+      
+    
+    }
+    button_pros1_3.onclick=function(){
+        img_pros1.setAttribute("src","https://escuderodissenyblog.com/wp-content/uploads/2022/12/termostato-de-google.jpg?w=1845&h=762&crop=")
+       description_pros.innerHTML="Los timbres y las cámaras Nest pueden detectar la diferencia entre una persona, un animal y un vehículo. Serás el primero en saberlo, con notificaciones de actividades importantes."
+     this.style="border-bottom: 3px solid rgb(64, 62, 62);"
+     button_pros1_2.style="border-bottom: none;"
+      button_pros1_1.style="border-bottom: none;"
+      
+    
+    }
 </script>
 </div>
-<a href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button id="whatsapp"><box-icon name='whatsapp' type='logo' color='#43f111' ></box-icon></button></a>
+<a href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor" target="_blank"><button id="whatsapp"><box-icon name='whatsapp' type='logo' color='#43f111' ></box-icon></button></a>
+<div id="redes">
+    <a class="item_redes" target="_blank" href="https://www.facebook.com/profile.php?id=61563564633472">Facebook    <box-icon name='facebook' type='logo' color='#faeded' ></box-icon></a>
+    <a class="item_redes" href="">Instagram   <box-icon name='instagram' type='logo' color='#faeded' ></box-icon></a>
+    <a class="item_redes" href="">Youtube     <box-icon name='youtube' type='logo' color='#faeded' ></box-icon></a>
+    <a class="item_redes" href="">Linkedin    <box-icon name='linkedin-square' type='logo' color='#faeded' ></box-icon></a>
 
+</div>
 
     
 </body>
