@@ -7,11 +7,13 @@
 
 #solutions{
    
-    width: 90%;
+    width: 100%;
     height: fit-content;
     flex-direction: column;
     display: flex;
     align-items: center;
+    gap: 25px;
+    justify-content: center;
   
 }
 #cont_solutions{
@@ -79,4 +81,55 @@
    height: 80px;
     
 
+}
+#cotizar{
+    width: 90%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  
+   position: relative;
+   background-position: 50%;
+   background-color: aquamarine;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+#cotizar H2{
+    width: 90%;
+    height: fit-content;
+    position: relative;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
+       left: 25px;
+       font-size: 50px;
+      top: 15px;
+}
+#cotizar p{
+   
+    position: relative;
+    width: 60%;
+    height: fit-content;
+    
+    left: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#cotizar button{
+position: relative;
+    width: 200px;
+    height:80px;
+   left: 100px;
+   background: rgba(231, 99, 51, 0.701);
+   border: 2px solid rgba(237, 102, 52, 0.812);
+   border-radius: 5px;
+   color: white;
+   font-size: 20px;
+   
+}
+#cotizar button:hover{
+  background:  rgba(237, 102, 52, 0.812);
+  cursor: pointer;
 }
