@@ -355,7 +355,39 @@
     }
 </script>
 </div>
-<a href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor" target="_blank"><button id="whatsapp"><box-icon name='whatsapp' type='logo' color='#43f111' ></box-icon></button></a>
+<div id="chat_whatsapp">
+   <div id="header_chat"> <h4><box-icon name='whatsapp' type='logo' color='#faeded' ></box-icon> Whatsap</h4> <button id="close_chat">x</button></div>
+    <div id="chat_demo"> Buen dia. <br>quisierarealizar una cotizacion por favor</div>
+</div>
+<a  id="" target="_blank"><button id="whatsapp"><box-icon name='whatsapp' type='logo' color='#43f111' ></box-icon></button></a>
+
+
+<script>
+   var  whatsapp=document.querySelector("#whatsapp");
+   var  chat_whatsapp=document.querySelector("#chat_whatsapp");
+ var close_chat=document.querySelector("#close_chat");
+   whatsapp.onclick=function(){
+    var anterior=this.innerHTML;
+    this.classList.toggle("active")
+    this.innerHTML=""
+   var send_whatsapp= document.createElement("a")
+   send_whatsapp.id="sed_whatsapp"
+   send_whatsapp.innerHTML="Iniciar chat"
+   send_whatsapp.setAttribute("href","https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor")
+   send_whatsapp.setAttribute("target","_blank")
+    this.appendChild(send_whatsapp)
+    chat_whatsapp.classList.add("active")
+   // sed_whatsapp.setAttribute("href","https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor")
+   close_chat.onclick=function(){
+    chat_whatsapp.classList.remove("active")
+    whatsapp.classList.toggle("active")
+    whatsapp.innerHTML=anterior
+   }   
+}
+   
+
+</script>
+
 <div id="redes">
     <a class="item_redes" target="_blank" href="https://www.facebook.com/profile.php?id=61563564633472">Facebook    <box-icon name='facebook' type='logo' color='#faeded' ></box-icon></a>
     <a class="item_redes" href="">Instagram   <box-icon name='instagram' type='logo' color='#faeded' ></box-icon></a>
