@@ -315,6 +315,17 @@ position: relative;
     top: 20px;
     
    }
+   .p_medio{
+    position: relative;
+    top: 100px;
+   text-decoration: solid;
+   text-align: center;
+    width: 50%;
+    height: 250px;
+    font-size: 30px;
+    color: rgb(150, 148, 148);
+
+   }
 footer{
 
     width: 100%;
@@ -364,9 +375,14 @@ display: none;
         height: 300px;
     }
     #description_pros{
-      
-        width: 100%;}
+      width: 90%;
+    
+       }
         .p_medio{
             
             width: 90%;}
+            #redes{
+
+                bottom: 50%;
+            }
 }
