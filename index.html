@@ -11,21 +11,18 @@
     <header>
         <div id="menu">
             <div id="desplegable">
-                <a href="">Automatic home solutions</a>
+                <img id="logo" src="/img/logo1.png" alt="">
+                <a id="titulo" href="">Automatic home solutions</a>
                 <button id="btn_desplegar"><box-icon name='chevron-down' type='solid' flip='horizontal' color='#5d5454' ></box-icon></button>
             </div>
             <div id="subMenu">
                 <div id="cont_subMenu">
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Smart home OS</a></div>
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href=""> En toda la vivienda</a></div>
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">luminacoin inteligente</a></div>
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Stranquilidad</a></div>
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">video portero en cualquier parte</a></div>
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">cine en casa</a></div>
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Audion multihabitacion</a></div>
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Mando a distancia universal</a></div>
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Control por voz</a></div>
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Catalogo de productos</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Tranquilidad</a></div>
+                    <div class="items"><img src="img/lightbulb_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <a href="">Iluminacion  Inteligente</a></div>
+                    <div class="items"><img src="img/contacts_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <a href="">Video portero en cualquier parte</a></div>
+                    <div class="items"><img src="img/energy_savings_leaf_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <a href="">Ahorro Inteligente</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href=""></a></div>
+                    <div class="items"><img src="img/leadership_2903299.png" alt=""> <a href="">Nosotros</a></div>
                 </div>
                
 
@@ -47,7 +44,9 @@
                 
             }
         </script>
+        
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     #menu{
         width: 99%;
         height: 50px;
@@ -58,9 +57,16 @@
        z-index: 99;
        position: absolute;
     }
+    #logo{
+        width: 40px;
+        height: 30px;
+
+    }
+  
     #desplegable{
-        width: 250px;
-        height: 20px;
+     
+        width: 50%;
+        height: fit-content;
        
         
     }
@@ -78,12 +84,16 @@
         transition: all 1s ease-out;
 
     }
+      
+  
+    #titulo{
+        font-size: 35px;
+        font-weight: bolder;
+         text-decoration: none;
+         color: rgb(34, 34, 35);
+         font-family: "PT Serif", serif;
+     }
 
-    #menu a{
-        text-decoration: none;
-        color: rgb(214, 27, 27);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
     #subMenu{
         width: 100%;
         height: fit-content;
@@ -105,39 +115,48 @@
     #cont_subMenu{
         width: 50%;
         height: fit-content;
-        
+        position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 55px;
+        bottom: 15px;
         justify-content: center;
+        gap: 30px;
        
     }
     .items{
-        width: 100px;
+        width: 150px;
         height: fit-content;
+        position: relative;
+       
+       
         background: white;
         text-align: center;
         color: black;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
-        
+        text-decoration: none;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
     }
     .items a{
         color: black;
+        text-decoration: none;
+        font-size: 18px;
     }
     .items img{
         width: 50px;
         padding: 10px;
         border-radius: 50px;
         border-style:double;
-        border-color: red;
-        height: 40px;
+        border: 1px solid rgb(0, 81, 255);
         
+        height: 40px;
+       
         
     }
     .items img:hover{
-        background: red;
+        background: rgb(0, 85, 255);
         transform: scale(1.1);
         transition: all 0.5s ease-out;   
         opacity: 0.8; 
@@ -147,20 +166,45 @@
 
     </header>
 <div class="conrainer">
-    <video autoplay muted loop src="https://cdn.savant.com/video/9027_Savant_AnthemVideo_SHORT.m4v" style="width: 100%; height: 100%;" ></video>
+    <video id="videoSlider" autoplay muted  src="https://cdn.savant.com/video/9027_Savant_AnthemVideo_SHORT.m4v" style="width: 100%; height: 100%;" ></video>
+ <script>
 
+    var video1=[
+    "https://cdn.savant.com/video/GEL_Savant_LightingHypeVideo_020822.mp4",
+    "https://cdn.savant.com/video/Shades+Hero+Video.mp4",
+    "https://cdn.savant.com/video/9027_Savant_AnthemVideo_SHORT.m4v"
+
+
+]
+   
+var cont = 0;
+
+
+    
+    document.getElementById("videoSlider").addEventListener("ended", function(){
+        cont=cont +1
+        
+       if(cont<video1.length){
+        console.log(cont)
+        this.setAttribute("src",video1[cont])
+       }else{
+        cont = 0;
+        this.setAttribute("src",video1[cont])
+       }
+      });
+ </script>
 <section id="solutions">
     <h2>Soluciones personalizadas</h2>
     <div id="cont_solutions">
-        <div class="item_solution" style="background-image: url('https://ai-previews.123rf.com/ai-variation/preview/wm/welcomia/welcomia2102/welcomia210200002_0.jpg');">
+        <div class="item_solution" style="background-image: url('https://cyc-tecnologia.com/wp-content/uploads/2015/07/videoseguridad-620x420@2x.jpg');">
         
-            <button class="button_solution"> <box-icon name='menu'  color= 'white' ></box-icon>seguridad electronica</button>
+            <button class="button_solution"> <box-icon name='menu'  color= 'white' ></box-icon>Seguridad electronica</button>
         </div>
-        <div class="item_solution" style="background-image: url('https://ai-previews.123rf.com/ai-variation/preview/wm/welcomia/welcomia2102/welcomia210200002_0.jpg');">
-            <button class="button_solution"><box-icon name='menu' color= 'white' ></box-icon>seguridad electronica</button>
+        <div class="item_solution" style="background-image: url('https://alullan.es/wp-content/uploads/2019/11/domotica-en-el-hogar-beneficios-y-ventajas-980x461.jpg');">
+            <button class="button_solution"><box-icon name='menu' color= 'white' ></box-icon>Automatizacion residencial.</button>
         </div>
-        <div class="item_solution" style="background-image: url('https://ai-previews.123rf.com/ai-variation/preview/wm/welcomia/welcomia2102/welcomia210200002_0.jpg');">
-            <button class="button_solution"><box-icon name='menu' color= 'white' ></box-icon>seguridad electronica</button>
+        <div class="item_solution" style="background-image: url('https://controlaccesosysistemas.com/wp-content/uploads/2022/05/teclado-control-de-accesos.jpg');">
+            <button class="button_solution"><box-icon name='menu' color= 'white' ></box-icon>Control de acceso</button>
         </div>
         <div class="item_solution" style="background-image: url('https://ai-previews.123rf.com/ai-variation/preview/wm/welcomia/welcomia2102/welcomia210200002_0.jpg');">
             <button class="button_solution"><box-icon name='menu' color= 'white'></box-icon>seguridad electronica</button>
@@ -188,6 +232,8 @@
 </div>
 <p id="description_pros">Los timbres y las cámaras Nest pueden detectar la diferencia entre una persona, un animal y un vehículo. Serás el primero en saberlo, con notificaciones de actividades importantes.</p>
 
+
+<p class="p_medio">Gestiónalos todos con un simple toque, una sola orden de voz o incluso deja que las cosas ocurran automáticamente sinnecesidad de que interactúes.</p>
 <h3>Energía y ahorro</h3>
 <h2>Haz del ahorro de energía una rutina diaria.</h2>
 <img id="img_pros1" src="https://escuderodissenyblog.com/wp-content/uploads/2022/12/termostato-de-google.jpg?w=1845&h=762&crop=1" alt="">
@@ -215,7 +261,7 @@
         color: gray;
     }
     #pros h3{
-        font-size: 20px; 
+        font-size: 25px; 
         font-weight: lighter;
     }
     #pros h2{
@@ -265,6 +311,16 @@
     font-size: 20px;
     color: gray;
     
+   }
+   .p_medio{
+    position: relative;
+    top: 100px;
+   text-decoration: solid;
+   text-align: center;
+    width: 50%;
+    height: 250px;
+    font-size: 30px;
+
    }
 </style>
 <script>
@@ -357,7 +413,7 @@
 </div>
 <div id="chat_whatsapp">
    <div id="header_chat"> <h4><box-icon name='whatsapp' type='logo' color='#faeded' ></box-icon> Whatsap</h4> <button id="close_chat">x</button></div>
-    <div id="chat_demo"> Buen dia. <br>quisierarealizar una cotizacion por favor</div>
+    <div id="chat_demo"> Buen dia. <br>quisiera realizar una cotizacion por favor</div>
 </div>
 <a  id="" target="_blank"><button id="whatsapp"><box-icon name='whatsapp' type='logo' color='#43f111' ></box-icon></button></a>
 
@@ -376,13 +432,19 @@
    send_whatsapp.setAttribute("href","https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor")
    send_whatsapp.setAttribute("target","_blank")
     this.appendChild(send_whatsapp)
-    chat_whatsapp.classList.add("active")
+    chat_whatsapp.classList.add("active");
+   
    // sed_whatsapp.setAttribute("href","https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor")
+   
    close_chat.onclick=function(){
+   close()
+   }   
+
+   function close(){
     chat_whatsapp.classList.remove("active")
     whatsapp.classList.toggle("active")
     whatsapp.innerHTML=anterior
-   }   
+   }
 }
    
 
@@ -396,6 +458,56 @@
 
 </div>
 
+<script>
+   
+
+/*
+video.addEventListener('ended', () => {
+    currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+    videos[currentVideoIndex].play();
+  });
+var video1=[
+"https://cdn.savant.com/video/GEL_Savant_LightingHypeVideo_020822.mp4",
+"https://cdn.savant.com/video/Shades+Hero+Video.mp4"
+]
+document.getElementById("video_Slide").addEventListener("ended", function(){
+
+    for(var i=0; i<video1.length;i++){
+   console.log(i)
+        nextVideo(video1[i])
+    }   
     
+
+    });
+
+var video_Slide=document.querySelector("#video_Slide");
+    
+
+function nextVideo(url){
+
+    video_Slide.setAttribute("src",url)
+}
+/*setInterval(nextVideo, 3000);*/
+
+</script>
+<style>
+    .carousel-videos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      
+      .carousel-videos video {
+        margin: 10px;
+      }
+    #carrousel{
+        width: 50%;
+        height: 300px;
+    }
+    #carrousel video{
+        width: 100%;
+        height: 100%;
+    }
+</style>
 </body>
 </html>

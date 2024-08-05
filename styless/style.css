@@ -21,7 +21,7 @@
 }
 #cont_solutions{
     position: relative;
-      width: 80%;
+      width: 90%;
       height: fit-content;
      
       display: flex;
@@ -31,14 +31,14 @@
     justify-content: center;
 }
 .item_solution{
-    width: 40%;
-    height: 200px;
+    width: 45%;
+    height: 250px;
   position: relative;
     background-size: 100%;
      background-repeat: no-repeat ;
      justify-content: center;
      display: flex;
-    
+     border-radius: 5px;
     
 }
 
@@ -46,16 +46,17 @@
  width: 60%;
  height: 70px;
  border: none;
- background-color: rgba(198, 121, 14, 0.837);
+ background-color: rgba(14, 63, 198, 0.837);
  vertical-align: middle;
  margin: auto;
  color: aliceblue;
  font-size: 18px;
  overflow-x: auto;
  
+ 
 }
 .item_solution button:hover{
-    background-color: rgba(198, 121, 14, 0.692);
+    background-color: rgba(14, 66, 198, 0.692);
     cursor: pointer;
 }
 
