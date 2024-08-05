@@ -9,14 +9,26 @@
      font-family: "PT Serif", serif;
      
  }
+ #sas{
+    text-decoration: none;
+    color: rgb(34, 34, 35);
+    font-family: "PT Serif", serif;
+    font-weight: bolder;
+}
 .container{
     width: 100%;
     height: 200px;
     background-color: rgb(21, 0, 255);
 }
+#videoSlider{
+
+    width: 100%;
+    
+   
+}
 
 #solutions{
-   
+    position: relative;
     width: 100%;
     height: fit-content;
     flex-direction: column;
@@ -24,6 +36,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 5s5px;
 }
 #solutions h2{
     color: gray;
@@ -116,7 +129,9 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 300px;
     height: 300px;
-    background-color: rgb(234, 232, 229);
+    background-image: url("https://i.pinimg.com/564x/6d/c3/39/6dc33937c084f3d87cd3436f2379be84.jpg");
+    background-size: 50%;
+    background: transparent 1;
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -169,7 +184,11 @@ transition: all 0.5s ease-out ;
     vertical-align: middle;
     width: 30px;
     height: 30px;
+  
+    
+    
 }
+
 #chat_demo{
     width: 100%;
     height: 60px;
@@ -209,7 +228,10 @@ transition: all 0.5s ease-out ;
     vertical-align: middle;
     cursor: pointer;
 }
+#chat_demo button:hover{
+    transform: scale(1.1);
 
+}
 
 #chat_demo a{
     cursor: pointer;
@@ -274,6 +296,10 @@ transition: all 0.5s ease-in;
    flex-direction: row;
    flex-wrap: wrap;
    overflow: hidden;
+  
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
  
   
 }
@@ -283,10 +309,11 @@ transition: all 0.5s ease-in;
     position: relative;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-     color: rgb(19, 19, 19);
+     color: rgb(248, 247, 247);
        left: 25px;
        font-size: 50px;
       top: 15px;
+     
 }
 #cotizar p{
    color: rgb(26, 23, 23);
@@ -298,6 +325,12 @@ transition: all 0.5s ease-in;
     top: -25px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
+    
+    box-shadow: 5px 5px 5px 5px rgba(130, 126, 126, 0.534);
+}
+#cotizar p:hover{
+    background-color: rgba(128, 128, 128, 0.551);
+
 }
 #cotizar button{
 position: relative;
@@ -319,6 +352,54 @@ position: relative;
 }
 #cotizar button box-icon{
     vertical-align: middle;
+}
+
+
+#float_message{
+    position: fixed;
+    width: 500px;
+    height: 250px;
+    background-color: #fbfcfc;
+    visibility: hidden;
+    right: 15px;
+    top: 30%;
+   overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+#float_message.active{
+    visibility: visible;
+   
+
+}
+#float_message img{
+   margin-top:50px ;
+    width: 150px;
+    height: 100px;
+    vertical-align: middle;
+}
+#float_text{
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+    height:200px;
+    color: rgb(108, 104, 104);
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+}
+#float_text button{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    background: rgba(14, 14, 183, 0.649);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+
 }
 
 #description_pros{
@@ -350,7 +431,7 @@ position: relative;
     background: rgb(151, 151, 155);
     text-align: center;
     display: flex;
-    
+    top: 50px;
 }
 footer p{
     font-family: "Raleway", sans-serif;

@@ -13,13 +13,13 @@
         <div id="menu">
             <div id="desplegable">
                 <img id="logo" src="/img/logo1.png" alt="">
-                <a id="titulo" href="">Automatic home solutions</a>
+                <a id="titulo" href="">A H Solutions</a><a id="sas" href=""> S.A.S</a>
                 <button id="btn_desplegar"><box-icon name='chevron-down' type='solid' flip='horizontal' color='#5d5454' ></box-icon></button>
                 <a href="" id="ayuda"><box-icon name='help-circle'></box-icon>Ayuda</a>
             </div>
             <div id="subMenu">
                 <div id="cont_subMenu">
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="">Tranquilidad</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="/">Tranquilidad</a></div>
                     <div class="items"><img src="img/lightbulb_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <a href="">Iluminacion  Inteligente</a></div>
                     <div class="items"><img src="img/contacts_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <a href="">Video portero en cualquier parte</a></div>
                     <div class="items"><img src="img/energy_savings_leaf_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <a href="">Ahorro Inteligente</a></div>
@@ -29,7 +29,16 @@
                
 
             </div>
-          
+            <div id="float_message">
+
+                <img src="img/Sin título-1.png" alt="">
+                <div id="float_text">
+                    <p>Aumenta la seguridad de tu hogar y de tu familia con un sistema CCTV de última generación.
+                        Disfruta de mayor tranquilidad y reduce el riesgo de robos e intrusiones.</p>
+
+                        <a href=""><button>Contratar</button></a>
+                </div>
+            </div>
 
         </div>
 
@@ -42,9 +51,38 @@
                 div_menu.classList.toggle("active")
 
                 div_subMenu.classList.toggle("visible")
-
+                cerrar()
                 
             }
+
+           function cerrar(){
+            window.addEventListener('click', function(e){
+
+                if (div_menu.contains(e.target)){
+                
+              } else{
+                div_menu.classList.remove("active")
+                div_subMenu.classList.remove("visible")
+              }
+            })
+           }
+           const showOnPx = 1000;
+           const showOnPx1 = 2000;
+           const scrollContainer = () => {
+            return document.documentElement || document.body;
+          };
+          var float_message=document.getElementById("float_message");
+
+           document.addEventListener("scroll", () => {
+           
+            if (scrollContainer().scrollTop >showOnPx&&scrollContainer().scrollTop <2000) {
+              float_message.classList.add("active")
+            } else {
+                float_message.classList.remove("active")
+            }
+            
+            
+          })
         </script>
         
 <style>
@@ -55,7 +93,7 @@
        
         transition: all 1s ease-out;
        overflow: hidden;
-       background-color: rgb(248, 246, 246);
+       background-color: rgb(255, 255, 255);
        z-index: 99;
        position: absolute;
     }
@@ -74,6 +112,7 @@
         
       
     }
+   
     #ayuda{
         width: 5%;
         position: absolute;
@@ -120,7 +159,7 @@
     }
     #subMenu.visible{
         opacity: 1;
-        transition: all 1s ease-out;
+        transition: all 1s ease-out;background: rgba(255, 255, 255, 0.533);
        
     }
     #cont_subMenu{
@@ -141,7 +180,7 @@
         position: relative;
        
        
-        background: white;
+       
         text-align: center;
         color: black;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -177,10 +216,12 @@
 
     </header>
 <div class="conrainer">
-   <div id="cont_video"> <video id="videoSlider" autoplay muted  src="https://cdn.savant.com/video/9027_Savant_AnthemVideo_SHORT.m4v" style="width: 100%; height: 100%;" ></video>
+   <div id="cont_video"> <video id="videoSlider" autoplay muted  src="https://cdn.savant.com/video/9027_Savant_AnthemVideo_SHORT.m4v" ></video>
    
 
-<p id="descrip_video">La domótica es la automatización de un hogar, que permite controlar y gestionar dispositivos y sistemas de una vivienda de forma remota, ya sea a través de una aplicación móvil, comandos de voz o una interfaz centralizada</p></div>
+<p id="descrip_video">La domótica es la automatización de un hogar, que permite controlar y gestionar dispositivos y sistemas de una vivienda de forma remota, ya sea a través de una aplicación móvil, comandos de voz o una interfaz centralizada</p>
+
+</div>
  
  
     <script>
@@ -221,6 +262,7 @@ descrip_video1.innerText=des_video1[0]
        }
       });
  </script>
+
 <section id="solutions">
     <h2>Soluciones personalizadas</h2>
     <div id="cont_solutions">
@@ -239,7 +281,7 @@ descrip_video1.innerText=des_video1[0]
         </div>
     </div>
 
-    <p class="p_medio">Gestiónalos todos con un simple toque, una sola orden de voz o incluso deja que las cosas ocurran automáticamente sinnecesidad de que interactúes.</p>
+    <p class="p_medio">Disfruta de la tranquilidad de saber que tu casa está protegida con la última tecnología en vigilancia. Monitorea y controla remotamente tus cámaras para una mayor seguridad y comodidad.</p>
     <div id="cotizar" style="background-image: url('https://media.istockphoto.com/id/1431874851/es/foto/ingenier%C3%ADa-trabajando-con-inspecci%C3%B3n-de-dibujos-en-computadora-port%C3%A1til-en-la-oficina-y.jpg?s=1024x1024&w=is&k=20&c=7gBMfjK5u28JY2O83IkFlFr5vXnbDbOFKg7CzbsYLMg=')">
         <h2>
             COTIZACION PERSONALIZADA SEGUN TU NECECESIDAD
@@ -282,21 +324,23 @@ descrip_video1.innerText=des_video1[0]
    
     #cont_video{
         position: relative;
-        top: 25px;
+        
         width: 100%;
         height: fit-content;
+       
     }
     #descrip_video{
         width: 30%;
       right: 5%;
       overflow: hidden;
        position: absolute;
-       bottom: 5%;
+       bottom: 18%;
        font-weight: 300;
        color: rgb(250, 251, 251);
        font-size: 25px;
        font-family: "Raleway", sans-serif;
        word-wrap: break-word;
+       border-bottom: 3px solid white;padding-bottom: 15px;
     }
     #descrip_video:hover{
         background: rgba(128, 128, 128, 0.529);
@@ -311,7 +355,7 @@ descrip_video1.innerText=des_video1[0]
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: gray;
         bottom:  100px;
-        
+        top: 25px;
     }
     #pros h3{
         font-size: 25px; 
