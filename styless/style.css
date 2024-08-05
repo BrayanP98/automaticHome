@@ -248,7 +248,7 @@ transition: all 0.5s ease-out ;
     position: fixed;
    left: -105px;
     bottom: 30%;
-    background-color: blue;
+    background-color: rgba(19, 19, 199, 0.907);
     display: flex;
     flex-direction: column;
     transition: all 0.5s ease-out;
@@ -273,7 +273,7 @@ transition: all 0.5s ease-in;
     padding-top: 10px;
 }
 .item_redes:hover{
-    background-color: rgb(8, 8, 205);
+    background-color: rgb(21, 21, 213);
 }
 .item_redes box-icon{
     position: relative;
@@ -304,6 +304,7 @@ transition: all 0.5s ease-in;
   
 }
 #cotizar H2{
+    opacity: 5;
     width: 90%;
     height: fit-content;
     position: relative;
@@ -333,6 +334,7 @@ transition: all 0.5s ease-in;
 
 }
 #cotizar button{
+   
 position: relative;
     width: 250px;
     height:80px;
@@ -355,7 +357,7 @@ position: relative;
 }
 
 
-#float_message{
+.float_message{
     position: fixed;
     width: 500px;
     height: 250px;
@@ -372,13 +374,18 @@ position: relative;
    
 
 }
-#float_message img{
+#float_messageDomo.active{
+    visibility: visible;
+   
+
+}
+.float_message img{
    margin-top:50px ;
     width: 150px;
     height: 100px;
     vertical-align: middle;
 }
-#float_text{
+.float_text{
     text-align: center;
     padding: 5px;
     width: 50%;
@@ -388,12 +395,12 @@ position: relative;
     flex-direction: column;
     font-family: "Raleway", sans-serif;
 }
-#float_text button{
+.float_text button{
     position: relative;
     width: 150px;
     height: 40px;
     margin: auto;
-    background: rgba(14, 14, 183, 0.649);
+    background: rgba(4, 4, 171, 0.832);
     border: 0;
     color: white;
     cursor: pointer;

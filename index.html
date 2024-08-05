@@ -29,14 +29,23 @@
                
 
             </div>
-            <div id="float_message">
+            <div class="float_message" id="float_message">
 
                 <img src="img/Sin título-1.png" alt="">
-                <div id="float_text">
+                <div class="float_text">
                     <p>Aumenta la seguridad de tu hogar y de tu familia con un sistema CCTV de última generación.
                         Disfruta de mayor tranquilidad y reduce el riesgo de robos e intrusiones.</p>
 
-                        <a href=""><button>Contratar</button></a>
+                        <a target="_blank" href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button>Contratar</button></a>
+                </div>
+            </div>
+            <div class="float_message" id="float_messageDomo">
+
+                <img src="img/Sin título-1.png" alt="">
+                <div class="float_text">
+                    <p>Optimizar el confort y la seguridad del hogar mediante la tecnología. Controla y gestiona todos los aspectos de la vivienda desde un solo dispositivo.</p>
+
+                        <a target="_blank" href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button>Contratar</button></a>
                 </div>
             </div>
 
@@ -66,19 +75,23 @@
               }
             })
            }
-           const showOnPx = 1000;
-           const showOnPx1 = 2000;
+           const showOnPx = 500;
+           const showOnPx1 = 2800;
            const scrollContainer = () => {
             return document.documentElement || document.body;
           };
           var float_message=document.getElementById("float_message");
+          var float_messageDomo=document.getElementById("float_messageDomo")
 
            document.addEventListener("scroll", () => {
            
-            if (scrollContainer().scrollTop >showOnPx&&scrollContainer().scrollTop <2000) {
-              float_message.classList.add("active")
-            } else {
+            if (scrollContainer().scrollTop >showOnPx&&scrollContainer().scrollTop <1300) {
+                float_message.classList.add("active")
+            } else if(scrollContainer().scrollTop >showOnPx1&&scrollContainer().scrollTop <3600){
+                float_messageDomo.classList.add("active")
+            }else {
                 float_message.classList.remove("active")
+                float_messageDomo.classList.remove("active")
             }
             
             
@@ -303,7 +316,7 @@ descrip_video1.innerText=des_video1[0]
 <p id="description_pros">Los timbres y las cámaras Nest pueden detectar la diferencia entre una persona, un animal y un vehículo. Serás el primero en saberlo, con notificaciones de actividades importantes.</p>
 
 
-<p class="p_medio">Gestiónalos todos con un simple toque, una sola orden de voz o incluso deja que las cosas ocurran automáticamente sinnecesidad de que interactúes.</p>
+<p class="p_medio">Gestiónalos todos con un simple toque, una sola orden de voz o incluso deja que las cosas ocurran automáticamente sin necesidad de que interactúes.</p>
 <h3>Energía y ahorro</h3>
 <h2>Haz del ahorro de energía una rutina diaria.</h2>
 <img id="img_pros1" src="https://escuderodissenyblog.com/wp-content/uploads/2022/12/termostato-de-google.jpg?w=1845&h=762&crop=1" alt="">
