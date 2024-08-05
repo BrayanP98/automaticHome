@@ -52,7 +52,7 @@
  margin: auto;
  color: aliceblue;
  font-size: 18px;
- overflow-x: auto;
+ 
  
  
 }
@@ -305,6 +305,16 @@ position: relative;
     vertical-align: middle;
 }
 
+#description_pros{
+    position: relative;
+    width: 40%;
+    height: fit-content;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    top: 20px;
+    
+   }
 footer{
 
     width: 100%;
@@ -332,10 +342,31 @@ footer p{
     width: 60%;
     font-size: 10px;
     }
+    #cotizar {
+
+       position: relative;
+       top: 15px;
+        }
     #descrip_video{
 display: none;
     }
     .item_solution{
         width:100% ;
+        overflow: hidden;
+        height: 300px;
+        margin: auto;
     }
+    .item_solution button{
+        margin-top: 10px;
+    }
+    #img_pros,#img_pros1{
+        width: 100%;
+        height: 300px;
+    }
+    #description_pros{
+      
+        width: 100%;}
+        .p_medio{
+            
+            width: 90%;}
 }
