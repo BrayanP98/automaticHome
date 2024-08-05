@@ -167,14 +167,19 @@ transition: all 0.5s ease-out ;
    
 }
 #chat_message{
+    font-family: "Raleway", sans-serif;
     width: 50%;
-    height: 60px;
+    height: 40px;
     background-color:white;
     position: relative;
-   
+   font-size: 15px;
+   font-weight: 600;
     margin-top: 0px;
     border-radius: 20px;
     padding: 10px;
+}
+#chat_message.active{
+    background: gray;
 }
 #chat_demo button{
     position: relative;
@@ -188,6 +193,7 @@ transition: all 0.5s ease-out ;
     vertical-align: middle;
     cursor: pointer;
 }
+
 
 #chat_demo a{
     cursor: pointer;

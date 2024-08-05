@@ -15,6 +15,7 @@
                 <img id="logo" src="/img/logo1.png" alt="">
                 <a id="titulo" href="">Automatic home solutions</a>
                 <button id="btn_desplegar"><box-icon name='chevron-down' type='solid' flip='horizontal' color='#5d5454' ></box-icon></button>
+                <a href="" id="ayuda"><box-icon name='help-circle'></box-icon>Ayuda</a>
             </div>
             <div id="subMenu">
                 <div id="cont_subMenu">
@@ -28,7 +29,7 @@
                
 
             </div>
-           
+          
 
         </div>
 
@@ -54,22 +55,38 @@
        
         transition: all 1s ease-out;
        overflow: hidden;
-       background-color: white;
+       background-color: rgb(248, 246, 246);
        z-index: 99;
        position: absolute;
     }
     #logo{
+       
         width: 40px;
         height: 30px;
-
+        
+       
     }
   
     #desplegable{
-     
-        width: 50%;
-        height: fit-content;
        
+        width: 90%;
+        height: fit-content;
         
+      
+    }
+    #ayuda{
+        width: 5%;
+        position: absolute;
+        text-decoration: none;
+        color: rgb(42, 79, 165);
+     
+      vertical-align: middle;
+       right: 5px;
+    }
+    #ayuda box-icon{
+      
+        vertical-align: middle;
+        right: 5px;
     }
     #desplegable button{
         background: none;
@@ -83,7 +100,7 @@
     #menu.active{
         height: fit-content;
         transition: all 1s ease-out;
-
+       
     }
       
   
@@ -93,6 +110,7 @@
          text-decoration: none;
          color: rgb(34, 34, 35);
          font-family: "PT Serif", serif;
+         
      }
 
     #subMenu{
@@ -453,10 +471,10 @@ descrip_video1.innerText=des_video1[0]
 </script>
 </div>
 <div id="chat_whatsapp">
-   <div id="header_chat"> <h4><box-icon name='whatsapp' type='logo' color='#faeded' ></box-icon> Whatsap</h4> <button id="close_chat">x</button></div>
-    <div id="chat_demo"><a id="chat_message">Quisiera realizar una cotizacion </a> <a target="_blank" href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button><box-icon name='send' type='solid' color='#fdfbfb' ></box-icon></box-icon></button></a> </div>
-    <div id="chat_demo"> <a id="chat_message">Quisiera solicitar una revision tecnica</a><a target="_blank" href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button><box-icon name='send' type='solid' color='#fdfbfb' ></box-icon></button></a> </div>
-    <div id="chat_demo"> <a id="chat_message">   Informacion sobre productos y servicios</a> <a target="_blank" href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button><box-icon name='send' type='solid' color='#fdfbfb' ></box-icon></button></a></div>
+   <div id="header_chat"> <h4><box-icon name='whatsapp' type='logo' color='#faeded' ></box-icon> WhatsApp</h4> <button id="close_chat">x</button></div>
+    <div id="chat_demo"><a id="chat_message">Quisiera realizar una cotizacion </a> <a target="_blank" href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button class="send_chat"><box-icon name='send' type='solid' color='#fdfbfb' ></box-icon></box-icon></button></a> </div>
+    <div id="chat_demo"> <a id="chat_message">Quisiera solicitar una revision tecnica</a><a  target="_blank" href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button  class="send_chat"><box-icon name='send' type='solid' color='#fdfbfb' ></box-icon></button></a> </div>
+    <div id="chat_demo"> <a id="chat_message">   Informacion sobre productos y servicios</a> <a target="_blank" href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button class="send_chat"><box-icon name='send' type='solid' color='#fdfbfb' ></box-icon></button></a></div>
 </div>
 <a  id="" target="_blank"><button id="whatsapp"><box-icon name='whatsapp' type='logo' color='#43f111' ></box-icon></button></a>
 
@@ -472,7 +490,6 @@ descrip_video1.innerText=des_video1[0]
    var send_whatsapp= document.createElement("a")
   
     chat_whatsapp.classList.add("active");
-   
    // sed_whatsapp.setAttribute("href","https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor")
    
    close_chat.onclick=function(){
@@ -486,6 +503,18 @@ descrip_video1.innerText=des_video1[0]
    }
 }
    
+/*var send_chat=document.querySelectorAll("button.send_chat");
+var chat_demo=document.querySelectorAll("a#chat_message");
+send_chat[0].addEventListener("mouseout", function( event ) {
+    chat_demo[0].classList.toggle("active")
+  });
+  send_chat[1].addEventListener("mouseout", function( event ) {
+    chat_demo[1].classList.toggle("active")
+  });
+  send_chat[2].addEventListener("mouseout", function( event ) {
+    chat_demo[2].classList.toggle("active")
+  });
+  */
 
 </script>
 
