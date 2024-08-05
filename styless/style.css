@@ -247,13 +247,13 @@ transition: all 0.5s ease-in;
 }
 #cotizar{
     width: 98%;
-    height: 500px;
+    height: fit-content;
     background-repeat: no-repeat;
     background-size: 100%;
   
    position: relative;
-   background-position: 50%;
-   background-color: aquamarine;
+  background-color: #25d366;
+   
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -318,4 +318,18 @@ footer p{
     position: relative;
     color: white;
     margin: auto;
+}
+
+@media (max-width: 600px) {
+    #cotizar H2{
+        font-size: 20px;
+    }
+    #cotizar p{
+        font-size: 10px;
+    }
+    #cotizar button{
+
+    width: 60%;
+    font-size: 10px;
+    }
 }
