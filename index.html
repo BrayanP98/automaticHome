@@ -166,8 +166,13 @@
 
     </header>
 <div class="conrainer">
-    <video id="videoSlider" autoplay muted  src="https://cdn.savant.com/video/9027_Savant_AnthemVideo_SHORT.m4v" style="width: 100%; height: 100%;" ></video>
- <script>
+   <div id="cont_video"> <video id="videoSlider" autoplay muted  src="https://cdn.savant.com/video/9027_Savant_AnthemVideo_SHORT.m4v" style="width: 100%; height: 100%;" ></video>
+   
+
+<p id="descrip_video">La domótica es la automatización de un hogar, que permite controlar y gestionar dispositivos y sistemas de una vivienda de forma remota, ya sea a través de una aplicación móvil, comandos de voz o una interfaz centralizada</p></div>
+ 
+ 
+    <script>
 
     var video1=[
     "https://cdn.savant.com/video/GEL_Savant_LightingHypeVideo_020822.mp4",
@@ -176,17 +181,29 @@
 
 
 ]
-   
-var cont = 0;
+var des_video1=[
+"La domótica es la automatización de un hogar, que permite controlar y gestionar dispositivos y sistemas de una vivienda de forma remota, ya sea a través de una aplicación móvil, comandos de voz o una interfaz centralizada",
+"El CCTV, o circuito cerrado de televisión, es un sistema de seguridad que utiliza cámaras para monitorear áreas específicas, tanto en interiores como en exteriores. Estas cámaras capturan imágenes en tiempo real que pueden ser visualizadas y grabadas para su posterior análisis.",
+"La domótica es una aliada fundamental para reducir el consumo energético en nuestros hogares. Al automatizar sistemas como la iluminación, la climatización y los electrodomésticos, podemos optimizar su funcionamiento y evitar el desperdicio de energía. "
 
+
+
+]
+
+var cont = 0;
+var descrip_video1= document.getElementById("descrip_video");
+descrip_video1.innerText=des_video1[0]
 
     
     document.getElementById("videoSlider").addEventListener("ended", function(){
+      
+      
         cont=cont +1
         
        if(cont<video1.length){
         console.log(cont)
         this.setAttribute("src",video1[cont])
+        descrip_video1.innerText=des_video1[cont]
        }else{
         cont = 0;
         this.setAttribute("src",video1[cont])
@@ -211,8 +228,8 @@ var cont = 0;
         </div>
     </div>
 
-
-    <div id="cotizar" style="background-image: url('/img/imgControl-de-Costos.png')">
+    <p class="p_medio">Gestiónalos todos con un simple toque, una sola orden de voz o incluso deja que las cosas ocurran automáticamente sinnecesidad de que interactúes.</p>
+    <div id="cotizar" style="background-image: url('https://media.istockphoto.com/id/1431874851/es/foto/ingenier%C3%ADa-trabajando-con-inspecci%C3%B3n-de-dibujos-en-computadora-port%C3%A1til-en-la-oficina-y.jpg?s=1024x1024&w=is&k=20&c=7gBMfjK5u28JY2O83IkFlFr5vXnbDbOFKg7CzbsYLMg=')">
         <h2>
             COTIZACION PERSONALIZADA SEGUN TU NECECESIDAD
         </h2>
@@ -250,6 +267,28 @@ var cont = 0;
 
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+   
+    #cont_video{
+
+        width: 100%;
+        height: fit-content;
+    }
+    #descrip_video{
+        width: 30%;
+      right: 5%;
+      overflow: hidden;
+       position: absolute;
+       bottom: 5%;
+       font-weight: 300;
+       color: rgb(250, 251, 251);
+       font-size: 25px;
+       font-family: "Raleway", sans-serif;
+       word-wrap: break-word;
+    }
+    #descrip_video:hover{
+        background: rgba(128, 128, 128, 0.529);
+    }
     #pros{
         width: 100%;
         height: fit-content;
@@ -320,6 +359,7 @@ var cont = 0;
     width: 50%;
     height: 250px;
     font-size: 30px;
+    color: rgb(150, 148, 148);
 
    }
 </style>
@@ -413,7 +453,9 @@ var cont = 0;
 </div>
 <div id="chat_whatsapp">
    <div id="header_chat"> <h4><box-icon name='whatsapp' type='logo' color='#faeded' ></box-icon> Whatsap</h4> <button id="close_chat">x</button></div>
-    <div id="chat_demo"> Buen dia. <br>quisiera realizar una cotizacion por favor</div>
+    <div id="chat_demo"><a id="chat_message">Quisiera realizar una cotizacion </a> <a target="_blank" href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button><box-icon name='send' type='solid' color='#fdfbfb' ></box-icon></box-icon></button></a> </div>
+    <div id="chat_demo"> <a id="chat_message">Quisiera solicitar una revision tecnica</a><a target="_blank" href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button><box-icon name='send' type='solid' color='#fdfbfb' ></box-icon></button></a> </div>
+    <div id="chat_demo"> <a id="chat_message">   Informacion sobre productos y servicios</a> <a target="_blank" href="https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor"><button><box-icon name='send' type='solid' color='#fdfbfb' ></box-icon></button></a></div>
 </div>
 <a  id="" target="_blank"><button id="whatsapp"><box-icon name='whatsapp' type='logo' color='#43f111' ></box-icon></button></a>
 
@@ -424,14 +466,10 @@ var cont = 0;
  var close_chat=document.querySelector("#close_chat");
    whatsapp.onclick=function(){
     var anterior=this.innerHTML;
-    this.classList.toggle("active")
+    
     this.innerHTML=""
    var send_whatsapp= document.createElement("a")
-   send_whatsapp.id="sed_whatsapp"
-   send_whatsapp.innerHTML="Iniciar chat"
-   send_whatsapp.setAttribute("href","https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor")
-   send_whatsapp.setAttribute("target","_blank")
-    this.appendChild(send_whatsapp)
+  
     chat_whatsapp.classList.add("active");
    
    // sed_whatsapp.setAttribute("href","https://api.whatsapp.com/send/?phone=573147459094&text=Hola+quisiera+hacer+una+cotizacion+por+favor")
@@ -442,7 +480,7 @@ var cont = 0;
 
    function close(){
     chat_whatsapp.classList.remove("active")
-    whatsapp.classList.toggle("active")
+   
     whatsapp.innerHTML=anterior
    }
 }
@@ -458,56 +496,10 @@ var cont = 0;
 
 </div>
 
-<script>
+
    
-
-/*
-video.addEventListener('ended', () => {
-    currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-    videos[currentVideoIndex].play();
-  });
-var video1=[
-"https://cdn.savant.com/video/GEL_Savant_LightingHypeVideo_020822.mp4",
-"https://cdn.savant.com/video/Shades+Hero+Video.mp4"
-]
-document.getElementById("video_Slide").addEventListener("ended", function(){
-
-    for(var i=0; i<video1.length;i++){
-   console.log(i)
-        nextVideo(video1[i])
-    }   
-    
-
-    });
-
-var video_Slide=document.querySelector("#video_Slide");
-    
-
-function nextVideo(url){
-
-    video_Slide.setAttribute("src",url)
-}
-/*setInterval(nextVideo, 3000);*/
-
-</script>
-<style>
-    .carousel-videos {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-      
-      .carousel-videos video {
-        margin: 10px;
-      }
-    #carrousel{
-        width: 50%;
-        height: 300px;
-    }
-    #carrousel video{
-        width: 100%;
-        height: 100%;
-    }
-</style>
 </body>
+<footer>
+    <p>Copyright 2024, ScaliwoodSoft All Rights Reserved</p>
+</footer>
 </html>
