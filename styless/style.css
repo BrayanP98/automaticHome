@@ -46,8 +46,9 @@ position: relative;
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: gray;
-    bottom:  100px;
+    background-color: #eaf6f4;
     top: 100px;
+    padding-bottom: 100px;
 }
 
 #solutions{
@@ -461,7 +462,7 @@ position: relative;
     background: rgb(151, 151, 155);
     text-align: center;
     display: flex;
-    top: 50px;
+    top: 100px;
 }
 footer p{
     font-family: "Raleway", sans-serif;
@@ -477,6 +478,7 @@ footer p{
          
      }
      #phone{
+        width: 20%;
         height: 20px;
         overflow: hidden;
         right: 15%;
@@ -500,7 +502,7 @@ footer p{
          width: 90%;
          height: fit-content;
          font-size: 15px;
-       background-color: #25d366;
+      
          top: 5px;
          font-family: "Raleway", sans-serif;
          font-weight: 400;
@@ -538,6 +540,7 @@ display: none;
     #pros{
         position: relative;
         top: 150px;
+       
       
     }
     #description_pros{
