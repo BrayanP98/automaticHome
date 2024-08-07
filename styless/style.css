@@ -489,8 +489,8 @@ footer p{
         }
      .float_message{
        
-        width: 400px;
-        height: 200px;}
+        width: 350px;
+        height: 220px;}
     #cotizar H2{
         font-size: 20px;
     }
@@ -499,9 +499,9 @@ footer p{
          position: relative;
          width: 90%;
          height: fit-content;
-         font-size: 20px;
-         left: 30px;
-         top: -25px;
+         font-size: 15px;
+       background-color: #25d366;
+         top: 5px;
          font-family: "Raleway", sans-serif;
          font-weight: 400;
          
