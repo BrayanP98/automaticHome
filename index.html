@@ -16,11 +16,11 @@
                 <a id="titulo" href="">A H Solutions</a><a id="sas" href=""> S.A.S</a>
                 <button id="btn_desplegar"><box-icon name='chevron-down' type='solid' flip='horizontal' color='#5d5454' ></box-icon></button>
                <a href="" id="phone">3157527681 - 3147459094</a>
-                <a href="" id="ayuda"><box-icon name='help-circle'></box-icon>Ayuda</a>
+                <a href="" id="ayuda">Ayuda</a>
             </div>
             <div id="subMenu">
                 <div id="cont_subMenu">
-                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="/">Tranquilidad</a></div>
+                    <div class="items"><img src="img/camara-de-seguridad.png" alt=""> <a href="/cctv.html">Tranquilidad</a></div>
                     <div class="items"><img src="img/lightbulb_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <a href="">Iluminacion  Inteligente</a></div>
                     <div class="items"><img src="img/contacts_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <a href="">Video portero en cualquier parte</a></div>
                     <div class="items"><img src="img/energy_savings_leaf_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <a href="">Ahorro Inteligente</a></div>
@@ -88,7 +88,7 @@
            
             if (scrollContainer().scrollTop >showOnPx&&scrollContainer().scrollTop <1300) {
                 float_message.classList.add("active")
-            } else if(scrollContainer().scrollTop >showOnPx1&&scrollContainer().scrollTop <3600){
+            } else if(scrollContainer().scrollTop >showOnPx1&&scrollContainer().scrollTop <3300){
                 float_messageDomo.classList.add("active")
             }else {
                 float_message.classList.remove("active")
@@ -129,16 +129,16 @@
    
     
     #ayuda{
-        width: 5%;
+        width: 10%;
         position: absolute;
         text-decoration: none;
         color: rgb(42, 79, 165);
      
       vertical-align: middle;
-       right: 25px;
+       right: 2%;
     }
     #ayuda box-icon{
-      
+     width: 10px;
         vertical-align: middle;
         right: 5px;
     }

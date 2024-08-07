@@ -47,7 +47,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    top: 5s5px;
+    top: 55px;
 }
 #solutions h2{
     color: gray;
@@ -254,7 +254,7 @@ transition: all 0.5s ease-out ;
 }
 #redes{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: fit-content;
+    width: 150px;
     height: 200px;
     position: fixed;
    left: -105px;
@@ -464,6 +464,11 @@ footer p{
         
          
      }
+     #phone{
+        height: 20px;
+        overflow: hidden;
+        right: 15%;
+     }
     #cotizar H2{
         font-size: 20px;
     }
@@ -497,7 +502,7 @@ display: none;
     }
     #img_pros,#img_pros1{
         width: 90%;
-        height: 300px;
+        height: 250px;
     }
     
         .p_medio{
