@@ -15,6 +15,15 @@
     font-family: "PT Serif", serif;
     font-weight: bolder;
 }
+#ayuda{
+    width: 10%;
+    position: absolute;
+    text-decoration: none;
+    color: rgb(42, 79, 165);
+ font-size: 13px;
+  vertical-align: middle;
+   right: 0%;
+}
 #phone{
     width: 15%;
     position: absolute;
@@ -26,6 +35,127 @@
    right: 10%;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+#menu{
+    width: 99%;
+    height: 50px;
+   
+    transition: all 1s ease-out;
+   overflow: hidden;
+   background-color: rgb(255, 255, 255);
+   z-index: 99;
+   position: absolute;
+}
+#logo{
+   
+    width: 40px;
+    height: 30px;
+    
+   
+}
+
+#desplegable{
+   
+    width: 90%;
+    height: fit-content;
+    
+  
+}
+
+
+
+#ayuda box-icon{
+ width: 10px;
+    vertical-align: middle;
+    right: 5px;
+}
+#desplegable button{
+    background: none;
+    border: none;
+    color: gray;
+}
+#desplegable button box-icon {
+    vertical-align: middle;
+    color: white;
+}
+#menu.active{
+    height: fit-content;
+    transition: all 1s ease-out;
+   
+}
+  
+
+
+#subMenu{
+    width: 100%;
+    height: fit-content;
+   
+   opacity: 0;
+    transition: all 1s ease-out;
+    
+    justify-content: center; display: flex;
+    flex-direction: row;
+    
+    padding-top: 25px;
+   
+}
+#subMenu.visible{
+    opacity: 1;
+    transition: all 1s ease-out;background: rgba(255, 255, 255, 0.533);
+   
+}
+#cont_subMenu{
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    bottom: 15px;
+    justify-content: center;
+    gap: 30px;
+   
+}
+.items{
+    width: 150px;
+    height: fit-content;
+    position: relative;
+   
+   
+   
+    text-align: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.items a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+   
+}
+.items img{
+    width: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    border-style:double;
+    border: 1px solid rgb(0, 81, 255);
+    
+    height: 40px;
+   
+    
+}
+.items img:hover{
+    background: rgb(0, 85, 255);
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;   
+    opacity: 0.8; 
+}
+
 .container{
     width: 100%;
     height: 200px;
@@ -483,6 +613,28 @@ footer p{
         overflow: hidden;
         right: 15%;
      }
+     #ayuda{
+        right: 3%;
+     }
+
+     .items{
+        width: 80px;
+        height: fit-content;
+        position: relative;
+       
+     } 
+     #cont_subMenu{
+        width: 80%;
+        height: fit-content;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        bottom: 15px;
+        justify-content: center;
+        gap: 30px;
+       
+    }   
      #videoSlider{
         position: relative;
            
