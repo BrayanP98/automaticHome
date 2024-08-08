@@ -9,17 +9,39 @@
 <body>
     <div class="container">
         <div id="img_cctv">
-           
-        </div>
-        <section>
 
-            <h2>CCTV</h2>
+           <h2>CCTV</h2>
+        </div>
+        <section >
+            <div id="questions_cctv">
+                <div id="principal-quest">
+                    <h2>¿De qué forma usted puede reconocer si está en la necesidad de implementar soluciones de CCTV?</h2>
+                <p>Al admitir que se ha hecho al menos dos de las siguientes preguntas, significa que ha considerado la implementación de alguna de las soluciones de automatización residencial, y con ello disfrutar de una mayor seguridad, mayores ahorros energéticos que le permitan disfrutar del adecuado funcionamiento de su casa, para así garantizar el confort de su familia.</p>
+                </div>
+                <div id="second_quest">
+                    <a href="">	¿Qué debo proteger en mi casa?</a>
+                    <a href="">¿Qué tipo de cámaras necesito?</a>
+                    <a href="">	¿El sistema de CCTV me ayuda a tener mi casa más segura y controlada?</a>
+                    <a href="">¿Cuál es la mejor manera de hacerlo?</a>
+                    <a href="">¿Puedo proteger mi casa por etapas? </a>
+                    <a href="">¿Que camaras debo usar?</a>
+                    <a href="">¿El sistema de camaras aumenta el valor de mi propiedad? </a>
+                    <a href="">¿La automatización me facilitará la venta de mi propiedad en un futuro comparado con las que no lo tienen estos sistemas?</a>
+                    <a href="">¿Cuál es el mejor sistema de camaras para mi casa? </a>
+                    <a href="">¿Cómo sé qué tipo de parlantes puedo usar en este espacio?</a>
+                  
+                </div>
+                
+
+            </div>
+            <button id="button_contact">CONTACTE A UN ASESOR</button>
            </section>
            
        
 
     </div>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
   body{
 
     margin: 0;
@@ -38,10 +60,83 @@
            background-attachment: fixed;
            background-size: cover;
           height:  20em;
+          display: flex;
+        }
+        #img_cctv h2{
+            margin:auto ;
+            font-size:40px;
+            color: rgb(248, 243, 243);
+
+            font-family: "Raleway", sans-serif;
         }
         .container section{
-            height: 500px;
+            height: fit-content;
+            background-color: rgb(244, 245, 245);
+        }
 
+        #questions_cctv{
+            padding-bottom:20px ;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            
+            padding-top: 25px;
+        }
+        #button_contact{
+           padding: 15px;
+            position: absolute;
+            margin: auto;
+            left: 50%;
+            height: 50px;
+            background-color: rgba(22, 22, 224, 0.914);
+            color: white;
+            border: 0;
+            font-family: "Raleway", sans-serif;
+            font-weight: 500;
+        }
+        #principal-quest{
+            width: 50%;
+            height: fit-content;
+           display: flex;
+           flex-direction: column;
+        }
+
+        #principal-quest h2{
+            margin: auto;
+            width: 50%;
+            font-size: 43px;
+            font-family: "Raleway", sans-serif;
+            font-weight: 200;
+        }
+        #principal-quest p{
+            position: relative;
+            margin: auto;
+            width: 70%;
+            height: fit-content;
+            font-family: "Raleway", sans-serif;
+            font-weight: 200;
+            top: 50px;
+            font-size: 18px;
+        }
+        #second_quest{
+            background-color: rgb(244, 245, 245);
+            width: 50%;
+            height: fit-content;
+           
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding-top: 15px;
+        }
+        #second_quest a{
+            font-family: "Raleway", sans-serif;
+            font-weight: 200;
+            margin: auto;
+            width: 50%;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
         }
         
     </style>
