@@ -80,7 +80,7 @@
             height: fit-content;
             display: flex;
             flex-direction: row;
-            
+            flex-wrap: wrap;
             padding-top: 25px;
         }
         #button_contact{
@@ -139,6 +139,31 @@
             color: black;
         }
         
+
+        @media (max-width: 600px) {
+            #principal-quest{
+                width: 100%;
+                
+                height: fit-content;
+            }
+            #principal-quest h2{
+                width: 70%;
+            }
+            #second_quest{
+                position: relative;
+                width: 100%;
+                top: 100px;
+                padding-bottom: 100px;
+            }
+            #second_quest a{
+                width: 70%;
+            }
+            #button_contact{
+              margin-bottom: 0;
+              vertical-align: middle;
+            }
+
+        }
     </style>
 </body>
 </html>
