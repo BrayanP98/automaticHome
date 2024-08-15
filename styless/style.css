@@ -17,6 +17,7 @@ body{
     color: rgb(34, 34, 35);
     font-family: "PT Serif", serif;
     font-weight: bolder;
+    font-size: 15px;
 }
 #ayuda{
     width: 10%;
@@ -766,7 +767,7 @@ footer p{
 
 @media (max-width: 600px) {
     #titulo{
-        font-size: 15px;
+        font-size: 18px;
         
          
      }
@@ -907,6 +908,11 @@ display: none;
                    
                     
         
+                }
+               
+                #sas{
+                    
+                    font-size: 10px;
                 }
               
             }
