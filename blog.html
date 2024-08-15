@@ -3,87 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>AH_Blog</title>
+    <link rel="icon" type="image/x-icon" href="img/logo1.png" >
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="/styless/style.css">
     
 </head>
-<header>
 
-
-</header>
 <body>
-    <h2>Tips y consejos para automatizar tu espacio</h2>
-
-    <p>En este blog te brindaremos consejos sobre automatizacion y seguridad electronica que te pueden ayudar a mejorar tu hogar</p>
+ 
+    
     <div class="content">
-        <div id="principal_post">
+        <h2 id="title_blog">Tips y consejos para automatizar tu espacio</h2>
+
+         <p id="descrip_blog">En este blog te brindaremos consejos sobre automatizacion y seguridad electronica que te pueden ayudar a mejorar tu hogar</p>
+        
+        
+        <h3 id="title_new">Lo más nuevo..</h3>
+         <div id="principal_post">
             <img id="img_top" src="https://static.wixstatic.com/media/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.jpg/v1/fill/w_1489,h_1278,al_c,q_90/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.webp" alt="">
        
-            <div id="info_post">
-                <div id="date_post"><a href="">date post</a><a href="">2</a></div>
+            <div class="info_post">
+                <div id="date_post"><a href="">Agosto 14 de 2024</a><a href="">-2min</a></div>
                 
                 <h3 >Name Post</h3>
                 <p id="descript_post">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quisquam veritatis impedit neque facilis aperiam, distinctio laboriosam quaerat consequatur nihil tenetur adipisci ab placeat quia. Iusto ab corrupti asperiores quas!
                 </p>
                 <div id="reactions_post">
-
+                    <a href=""><box-icon name='message'></box-icon>0</a>
+                   <a href=""> <box-icon type='solid' name='low-vision'></box-icon> 0</a>
+                   <a id="heart" href=""> <box-icon  name='heart'  color="red"></box-icon></a>
 
                 </div>
 
             </div>
         </div>
 
+        <section id="more_cont">
 
+            <h4>Mas contenido</h4>
+
+            <div id="content_post2">
+             
+            
+            </div>
+        </section>
     </div>
+    <script>
 
-
-    <style>
-        header{
-            width: 100%;
-            height: 50px;
-            background-color: blue;
-
-        }
-        .content{
-            width: 100%;
-            height: fit-content;
-            display: flex;
+        var posts=[
+    
+        post1={
+            "image":"https://static.wixstatic.com/media/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.jpg/v1/fill/w_1489,h_1278,al_c,q_90/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.webp",
+            "date":"enero 25 de 2024",
+            "nombre":"Iluminacion Inteligente",
+            "descrip":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate nemo aliquam ut explicabo voluptates .", 
+            "reactions":"0",
             
-        }
-        #principal_post{
-            width: 50%;
-            height: fit-content;
-            margin: auto;
-            border: 1px solid black;
+    
+        },
+        post2={
+            "image":"https://static.wixstatic.com/media/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.jpg/v1/fill/w_1489,h_1278,al_c,q_90/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.webp",
+            "date":"Agosto 14 de 2024",
+            "nombre":"Razones para invertir en CCTV",
+            "descrip":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate nemo aliquam ut explicabo voluptates .", 
+            "reactions":"2",
             
-
-
-        }
-
-        #info_post{
-            display: flex;
-            flex-direction:  column;
-            padding: 5px;
-            width: 90%;
-            margin: auto;
-
-
-        }
+    
+        },
+        post3={
+            "image":"https://static.wixstatic.com/media/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.jpg/v1/fill/w_1489,h_1278,al_c,q_90/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.webp",
+            "date":"Agosto 14 de 2024",
+            "nombre":"Razones para invertir en CCTV",
+            "descrip":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate nemo aliquam ut explicabo voluptates .", 
+            "reactions":"2",
+            
+    
+        },
+        post4={
+            "image":"https://static.wixstatic.com/media/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.jpg/v1/fill/w_1489,h_1278,al_c,q_90/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.webp",
+            "date":"Agosto 14 de 2024",
+            "nombre":"Razones para invertir en CCTV",
+            "descrip":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate nemo aliquam ut explicabo voluptates .", 
+            "reactions":"2",
+            
+    
+        },
         
-        #info_post h3{
 
-            font-size: 30px;
+        
+        
+        
+        
+        ]
+        pintar_post()
+    
+        function pintar_post(){
+            var content_post2=document.getElementById("content_post2");
+            for(let i=0;i<posts.length;i++){
+              
+        
+                var  other_post=document.createElement("div");
+                other_post.className="other_post";
+                var  ImgOther_post=document.createElement("img");
+                ImgOther_post.setAttribute("src",posts[i].image)
+        
+                ////////
+                 var info_post = document.createElement("div");
+                 info_post.className="info_post"
+                 var Date_post = document.createElement("a");
+                 var Title_post = document.createElement("h3");
+                 var Descript_post = document.createElement("p");
+        
+        
+                 Date_post.innerHTML=posts[i].date;
+                 Title_post.innerHTML=posts[i].nombre
+                 Descript_post.innerHTML=posts[i].descrip
+                 ///
+                 var divReact_post = document.createElement("div");
+                 divReact_post.id="reactions_post"
+                 var React_post = document.createElement("a");
+                 var iconReact_post = document.createElement("box-icon");
+                
+                 React_post.innerHTML=  "<box-icon  name='like'></box-icon> " +posts[i].reactions
+        
+                
+                 info_post.appendChild(Date_post)
+                 info_post.appendChild(Title_post)
+                 info_post.appendChild(Descript_post)
+                 
+               
+                 divReact_post.appendChild(React_post)
+                 info_post.appendChild(divReact_post)
+        
+                 other_post.appendChild(ImgOther_post)
+                 other_post.appendChild(info_post)
+                
+                 content_post2.appendChild(other_post)
+        
+            }
         }
-        #img_top{
+     
+        
+    
+    </script>
 
-            width: 100%;
-            height: 50%;
-            margin: auto;
-        }
-        #reactions_post{
-            width:  90%;
-        }
-
-    </style>
+   
 </body>
+<script src="/js/index.js"></script>
+
 </html>

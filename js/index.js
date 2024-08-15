@@ -1,6 +1,53 @@
 
+function crearMenu(){
+    
+    var header=document.createElement("header")
+    var menu=document.createElement("div")
+    menu.id="menu"
 
 
+    var desplegar=document.createElement("div")
+    desplegar.id="desplegable"
+    var menu_logo=document.createElement("img")
+    menu_logo.id="logo"
+    menu_logo.setAttribute("src","/img/logo1.png")
+
+    var menu_title=document.createElement("a")
+    menu_title.id="titulo"
+    menu_title.setAttribute("href","/")
+    menu_title.innerHTML="A H Solutions"
+    var tile_sas=document.createElement("a")
+    tile_sas.id="sas"
+    tile_sas.innerHTML="S.A.S"
+    var buton_back=document.createElement("a")
+    buton_back.id="btn_desplegar"
+    buton_back.setAttribute("href","/")
+    buton_back.innerHTML="<box-icon name='arrow-back'></box-icon>"
+    var menu_phone=document.createElement("a")
+    menu_phone.id="phone"
+    var menu_help=document.createElement("a")
+    menu_phone.innerHTML="3147459094"
+    menu_phone.setAttribute("href","tel:+573147459094")
+    menu_help.id="ayuda"
+    menu_help.innerHTML="Ayuda"
+    menu_help.setAttribute("href","/")
+
+    desplegar.appendChild(menu_logo)
+    desplegar.appendChild(menu_title)
+    desplegar.appendChild(tile_sas)
+    desplegar.appendChild(buton_back)
+    desplegar.appendChild(menu_phone)
+    desplegar.appendChild(menu_help)
+    menu.appendChild(desplegar)
+    header.appendChild(menu)
+    
+
+
+document.body.prepend(header)
+
+}
+
+crearMenu()
 
 var pdf_buton=document.getElementById("pdf");
 pdf_buton.onclick=function(){

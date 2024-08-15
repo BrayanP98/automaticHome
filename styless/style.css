@@ -73,14 +73,19 @@ body{
     vertical-align: middle;
     right: 5px;
 }
-#desplegable button{
-    background: none;
+#btn_desplegar{
+    
     border: none;
     color: gray;
+    margin-left: 15px;
+    
+
 }
 #desplegable button box-icon {
     vertical-align: middle;
     color: white;
+    position: relative;
+   
 }
 #menu.active{
     height: fit-content;
@@ -604,6 +609,161 @@ footer p{
     margin: auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* styless blog*/
+
+       
+        .content{
+            position: relative;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            font-family: "Raleway", sans-serif;
+            gap: 15px;
+            top: 50px;
+        }
+        #title_blog{
+            color: red;
+            font-size: 35px;
+            width: 90%;
+            text-align: center;
+        }
+        #descrip_blog{
+            color: rgb(73, 72, 72);
+            font-size: 18spx;
+            width: 90%;
+            text-align: center;
+        }
+
+        #title_new{
+            position: relative;
+            color: rgb(73, 72, 72);
+            font-size: 18spx;
+            width: 10%;
+           margin-left: 15%;
+        }
+        #principal_post{
+            width: 70%;
+            height: fit-content;
+            margin: auto;
+            border: 1px solid black;
+            
+
+
+        }
+
+        .info_post{
+            display: flex;
+            flex-direction:  column;
+            padding: 5px;
+            width: 90%;
+            margin: auto;
+
+
+        }
+        #date_post {
+            gap: 8px;
+            display: flex;
+            flex-direction: row;
+        }
+        #date_post a{
+            color:  gray    ;
+            text-decoration: none;
+        }
+        
+        #info_post h3{
+
+            font-size: 30px;
+        }
+        #img_top{
+
+            width: 100%;
+            height: 50%;
+            margin: auto;
+        }
+        #reactions_post{
+            width:  100%;
+            height: 50px;
+            border-top: 1px solid rgba(128, 128, 128, 0.799);
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+
+        #reactions_post a{
+            position: relative;
+            width:fit-content;
+          text-decoration: none;
+            vertical-align: middle;
+           color: #000;
+           cursor: pointer;
+
+
+        }
+       
+        #reactions_post box-icon{
+            position: relative;
+            width:fit-content;
+           
+            vertical-align: middle;
+
+
+        }
+        
+        
+        #reactions_post #heart{
+        
+          margin-right: 0px;
+         position:absolute;
+         right: 0;
+            
+        }
+
+        #more_cont{
+            position: relative;
+            width: 70%;
+            height: fit-content;
+            margin: auto;
+            top:100px;
+           
+            
+
+        }
+        #content_post2{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            gap: 4.5%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .other_post{
+            position: relative;
+            margin-top: 25px;
+            width: 30%;
+            height: fit-content;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column  ;
+            min-width: 250px;
+        }
+        
+
+    
+
 @media (max-width: 600px) {
     #titulo{
         font-size: 15px;
@@ -723,4 +883,29 @@ display: none;
             #chat_whatsapp{
                 
                 width: 300px;}
-}
+
+
+
+
+                /*   display blog*/
+
+
+                #principal_post{
+                    width: 95%;
+                    height: fit-content;
+                    margin: auto;
+                    border: 1px solid black;
+                    
+        
+        
+                }
+                
+                #more_cont{
+                  
+                    width: 100%;
+                   
+                   
+                    
+        
+                }
+            }
