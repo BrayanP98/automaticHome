@@ -649,7 +649,7 @@ footer p{
             position: relative;
             color: rgb(73, 72, 72);
             font-size: 18spx;
-            width: 10%;
+            width: 50%;
            margin-left: 15%;
         }
         #principal_post{
@@ -908,4 +908,5 @@ display: none;
                     
         
                 }
+              
             }
