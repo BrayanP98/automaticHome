@@ -146,6 +146,115 @@
         }
      
         
+        var img_top=document.getElementById("img_top");
+        var principal_post=document.getElementById("principal_post");
+    
+        img_top.onclick=function(){
+           
+            principal_post.style="opacity:0.5"
+             principal_post.innerHTML=""
+            principal_post.classList.toggle("active")
+             principal_post.style="opacity:1"
+             /////informacion fechay creador post
+            var Top_info=document.createElement("div")
+            Top_info.className="info_top"
+
+            var img_creador=document.createElement("img")
+            img_creador.className="img_creador"
+            img_creador.setAttribute("src","https://c0.klipartz.com/pngpicture/442/17/gratis-png-equipo-iconos-usuario-perfil-masculino-usuario-thumbnail.png")
+            var name_creador=document.createElement("a")
+            name_creador.className="name_creador"
+            name_creador.innerHTML="Brayan P"
+            var date_post=document.createElement("a")
+           date_post.className="date_post"
+           date_post.innerHTML="1 enero 2024"
+            var late_post=document.createElement("a")
+           late_post.className="late_post"
+           late_post.innerHTML=" 5 min de lectura"
+            var share_post=document.createElement("a")
+          share_post.className="share_post"
+          share_post.innerHTML="<box-icon name='menu-alt-right'></box-icon>"
+
+
+          //////content post//////
+
+          var title_post=document.createElement("h2")
+          title_post.className="title_post"
+        title_post.innerHTML="Iluminacion inteligente"
+
+          var subTitle_post=document.createElement("h4")
+          subTitle_post.className="subTitle_post"
+           subTitle_post.innerHTML="los muchos beneficios de un sistema inteligente de iluminacion"
+         
+         
+           var img_post=document.createElement("img");
+          img_post.className="img_post"
+          img_post.setAttribute("src","https://static.wixstatic.com/media/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.jpg/v1/fill/w_1489,h_1278,al_c,q_90/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.webp")
+          var intro_post=document.createElement("p");
+          intro_post.className="intro_post"
+          intro_post.innerHTML="Bienvenido a la entrada de tu blog. Aprovecha este espacio para conectarte con tus lectores de una manera original e interesante. Piénsalo como un diálogo continuado, donde puedes compartir actualizaciones sobre tu negocio, novedades, tendencias y más."
+
+
+//////////foter redes //////
+
+            var div_post_redes=document.createElement("div");
+            div_post_redes.className="redes_footer"
+            var facebook_post=document.createElement("a");
+            facebook_post.innerHTML="<box-icon name='facebook' type='logo' ></box-icon>"
+            var youtube_post=document.createElement("a");
+            youtube_post.innerHTML="<box-icon name='youtube' type='logo' ></box-icon>"
+            var insta_post=document.createElement("a");
+            insta_post.innerHTML="<box-icon name='instagram' type='logo' ></box-icon>"
+            var linkedin_post=document.createElement("a");
+            linkedin_post.innerHTML="<box-icon name='linkedin-square' type='logo' ></box-icon>"
+
+
+
+
+            ///foter reactions//////
+            var div_post_react=document.createElement("div");
+            div_post_react.className="div_post_react"
+            var views_post=document.createElement("a");
+            views_post.className="views_post";
+            views_post.innerHTML="0 vistas"
+            var like_post=document.createElement("a");
+            like_post.className="like_post"
+            like_post.innerHTML="<box-icon name='heart'color=red ></box-icon>"
+
+             div_post_react.appendChild(views_post)
+             div_post_react.appendChild(like_post)
+
+
+            div_post_redes.appendChild(facebook_post)
+            div_post_redes.appendChild(youtube_post)
+            div_post_redes.appendChild(insta_post)
+            div_post_redes.appendChild(linkedin_post)
+
+
+            Top_info.appendChild(img_creador)
+            Top_info.appendChild(name_creador)
+            Top_info.appendChild(date_post)
+            Top_info.appendChild(late_post)
+            Top_info.appendChild(share_post)
+
+           
+
+
+
+           principal_post.appendChild(Top_info) 
+
+            ////////addd content post////
+            principal_post.appendChild(title_post)
+            principal_post.appendChild(subTitle_post)
+            principal_post.appendChild(img_post)
+            principal_post.appendChild(intro_post)
+            principal_post.appendChild(div_post_redes)
+            principal_post.appendChild(div_post_react)
+
+
+
+        }
+
     
     </script>
 

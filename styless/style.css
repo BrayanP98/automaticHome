@@ -659,9 +659,17 @@ footer p{
             margin: auto;
             border: 1px solid black;
             
-
+       
 
         }
+        #principal_post.active{
+            width: 60%;
+            border: 0;
+            transform: scale(1);
+            
+
+        }
+
 
         .info_post{
             display: flex;
@@ -687,7 +695,7 @@ footer p{
             font-size: 30px;
         }
         #img_top{
-
+            cursor:  progress;
             width: 100%;
             height: 50%;
             margin: auto;
@@ -761,7 +769,82 @@ footer p{
             flex-direction: column  ;
             min-width: 250px;
         }
-        
+
+
+        /* post onclik */
+
+        .info_top{
+            width: 100%;
+            height: 50px;
+            font-size: 13px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            position: relative;
+            
+        }
+
+        .info_top img{
+            position: relative;
+            width: 20px;
+            height: fit-content;
+            vertical-align: middle;
+          
+        }
+        .share_post{
+            position: absolute;
+            right: 5px;
+            cursor: pointer;
+        }
+
+
+        /*content post*/
+        .title_post{
+            width: 80%;
+            font-size: 35px;
+           
+
+        }
+        .subTitle_post{
+            width: 80%;
+            font-size: 20px;
+            font-weight: 500;
+           
+
+        }
+    .img_post{
+
+       width: 100%;
+       height: 600px;
+    }  
+    
+    .redes_footer{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+        height: 50px;
+        border-top:1px solid gray;
+        border-bottom:1px solid gray;
+    }
+    .redes_footer a{
+        position: relative;
+       top: 10px;
+       
+    }
+    .div_post_react{
+        width: 100%;
+        height: 50px;
+        position: relative;
+        padding-top: 10px;
+    }
+    .like_post{
+        position: absolute;
+        right: 5px;
+       
+
+    }
 
     
 
@@ -904,15 +987,17 @@ display: none;
                 #more_cont{
                   
                     width: 100%;
-                   
-                   
-                    
-        
+                 
                 }
                
                 #sas{
                     
                     font-size: 10px;
+                }
+                #principal_post.active{
+                    width: 100%;
+                    border: 0;
+            
                 }
               
             }
