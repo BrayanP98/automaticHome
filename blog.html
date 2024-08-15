@@ -321,7 +321,19 @@
         var principal_post=document.getElementById("principal_post");
     
         function pintar(pos){
-           
+           const antes=principal_post.innerHTML
+
+         var  title_new=document.getElementById("title_new")
+         title_new.innerHTML="Al Principio..."
+         title_new.style="cursor:pointer";
+
+         title_new.onclick=function(){
+            this.innerHTML="Lo más nuevo..."
+            this.style="cursor=none"
+            principal_post.innerHTML=""
+            content_post2.innerHTML=""
+            pintar_post()
+         }
             principal_post.style="opacity:0.5"
              principal_post.innerHTML=""
             principal_post.classList.add("active")

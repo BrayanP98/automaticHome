@@ -799,6 +799,7 @@ footer p{
             flex-direction: row;
             gap: 10px;
             position: relative;
+            border-top: 2px solid rgba(128, 128, 128, 0.388);
            
         }
 
@@ -1023,5 +1024,10 @@ display: none;
                     border: 0;
             
                 }
+                .img_post{
+
+                   
+                    height: 400px;
+                 }  
               
             }
