@@ -669,6 +669,24 @@ footer p{
             
 
         }
+        .cont_post{
+           
+            display: flex;
+            flex-direction: column;
+           
+            padding-bottom: 20px;
+        }
+        .cont_post h3{
+            font-size: 30px;
+          
+
+        }
+        .cont_post h3::first-letter{
+            text-transform: uppercase;
+        } 
+        .cont_post p{
+            width: 80%;
+        }
 
 
         .info_post{
@@ -781,14 +799,17 @@ footer p{
             flex-direction: row;
             gap: 10px;
             position: relative;
-            
+           
         }
 
         .info_top img{
             position: relative;
-            width: 20px;
+            width: 30px;
             height: fit-content;
             vertical-align: middle;
+            border-radius: 50px;
+            height: 30px;
+            top: -10px;
           
         }
         .share_post{
@@ -827,6 +848,8 @@ footer p{
         height: 50px;
         border-top:1px solid gray;
         border-bottom:1px solid gray;
+       
+        
     }
     .redes_footer a{
         position: relative;
@@ -842,6 +865,7 @@ footer p{
     .like_post{
         position: absolute;
         right: 5px;
+        cursor: pointer;
        
 
     }
@@ -995,7 +1019,7 @@ display: none;
                     font-size: 10px;
                 }
                 #principal_post.active{
-                    width: 100%;
+                    width: 90%;
                     border: 0;
             
                 }
