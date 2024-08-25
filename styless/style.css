@@ -416,7 +416,7 @@ transition: all 0.5s ease-out ;
     flex-direction: column;
     transition: all 0.5s ease-out;
     font-size: 20px;
-    
+    z-index: 99;
  margin: auto;
 }
 #redes:hover {
@@ -594,6 +594,94 @@ position: relative;
     color: rgb(150, 148, 148);
 
    }
+
+
+   /***section contact US***/
+
+   svg{
+    z-index: 0;
+    position: absolute;
+    background:url('') no-repeat center center;
+    background-size:cover;
+    width:100%;
+    bottom: 0;
+  }
+#contact_us {
+    z-index: 1;
+    position: relative;
+    background-color: rgb(0, 51, 255);
+    background-color: rgb(0, 128, 255);
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   
+    font-family: "Raleway", sans-serif;font-family: "Raleway", sans-serif;
+    overflow: hidden;
+  
+
+}
+#contact_us a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+#contact_us #sub1,#sub2{
+    width: 40%;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+  
+}
+#sub1{
+    top: 85px;
+}
+#button_contact {
+    width: 80%;
+    height: fit-content;
+    position: relative;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: auto;
+    
+    
+}
+#button_contact button{
+width: 100px;
+height: 35px;
+position: relative;
+background-color: white;
+border: 0;
+border-radius: 50px;
+color: blue;
+font-weight: 600;
+right: 0;
+cursor: pointer;
+
+}
+#contact_us #p_contact{
+    font-size:18px;
+    color: rgb(248, 246, 246);
+    width: 93%;
+   
+}
+ #contact_us p{
+    font-size: 25px;
+    color: white;
+
+}
+
+#contact_us h4{
+    font-size: 25px;
+    color: white;
+}
+#contact_us img{
+    width: 90%;
+  
+}
 footer{
 position: relative;
     width: 100%;
@@ -601,7 +689,7 @@ position: relative;
     background: rgb(151, 151, 155);
     text-align: center;
     display: flex;
-    top: 100px;
+   
 }
 footer p{
     font-family: "Raleway", sans-serif;
@@ -1030,4 +1118,14 @@ display: none;
                     height: 400px;
                  }  
               
+
+        #contact_us{
+
+            flex-direction: column;
+
+        }
+
+        #contact_us #sub1,#sub2{
+            width: 90%;
+        }
             }
