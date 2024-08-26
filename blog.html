@@ -84,7 +84,7 @@
         post2={
             "autor":"Brayan P",
             "icon":"https://img.freepik.com/psd-gratis/ilustracion-3d-hombre-negocios-gafas_23-2149436194.jpg?t=st=1723761540~exp=1723765140~hmac=77547ec865e9b30103006d5ec08fccd21c923e6720b6feeb52f320be7e994c66&w=740",
-            "image":"https://www.segurilatam.com/wp-content/uploads/sites/5/2020/08/videovigilancia-lanaccess-900x600.jpg",
+            "image":"https://www.niceforyou.com/sites/default/files/styles/600x370_crop/public/2022-03/NiceBiDi_interfaces_cover.png?itok=mELltDtN",
             "date":"Agosto 25 de 2024",
             "nombre":"porque invertir en un sistema de CCTV",
             "subTitulo":"los muchos beneficios de un sistema inteligente de iluminacionsss",
@@ -122,7 +122,7 @@
        post3={
             "autor":"Brayan P",
             "icon":"https://img.freepik.com/psd-gratis/ilustracion-3d-hombre-negocios-gafas_23-2149436194.jpg?t=st=1723761540~exp=1723765140~hmac=77547ec865e9b30103006d5ec08fccd21c923e6720b6feeb52f320be7e994c66&w=740",
-           "image":"https://www.segurilatam.com/wp-content/uploads/sites/5/2020/08/videovigilancia-lanaccess-900x600.jpg",
+           "image":"https://www.niceforyou.com/sites/default/files/styles/600x370_crop/public/2024-06/iStock-507832693_0.jpg?itok=FMkyo6MU",
             "date":"Agosto 25 de 2024",
             "nombre":"porque invertir en un sistema de CCTV",
             "subTitulo":"los muchos beneficios de un sistema inteligente de iluminacionsss",
@@ -159,7 +159,7 @@
         post4={
             "autor":"Daniela",
             "icon":"https://img.freepik.com/fotos-premium/renderizacion-3d-linda-chica-dibujos-animados-gafas-aisladas-sobre-fondo-blanco_1308157-8781.jpg?w=740",
-           "image":"https://www.segurilatam.com/wp-content/uploads/sites/5/2020/08/videovigilancia-lanaccess-900x600.jpg",
+           "image":"https://www.niceforyou.com/sites/default/files/styles/600x370_crop/public/2024-05/n_app1030oa_out.jpg?itok=IrgPx3y0",
             "date":"Agosto 25 de 2024",
             "nombre":"porque invertir en un sistema de CCTV",
             "subTitulo":"los muchos beneficios de un sistema inteligente de iluminacionsss",
@@ -285,11 +285,13 @@
                  info_post.className="info_post"
                  var Date_post = document.createElement("a");
                  var Title_post = document.createElement("h3");
+                 var hashtag_post = document.createElement("a");
                  var Descript_post = document.createElement("p");
         
-        
+                 hashtag_post.id="hashtag_post"
                  Date_post.innerHTML=posts[i].date;
                  Title_post.innerHTML=posts[i].nombre
+                 hashtag_post.innerHTML="#AutoHome"
                  Descript_post.innerHTML=posts[i].descrip
                  ///
                  var divReact_post = document.createElement("div");
@@ -302,6 +304,7 @@
                 
                  info_post.appendChild(Date_post)
                  info_post.appendChild(Title_post)
+                 info_post.appendChild(hashtag_post)
                  info_post.appendChild(Descript_post)
                  
                
