@@ -15,10 +15,10 @@ function crearMenu(){
     var menu_title=document.createElement("a")
     menu_title.id="titulo"
     menu_title.setAttribute("href","/")
-    menu_title.innerHTML="A H Solutions"
+    menu_title.innerHTML="Nexo"
     var tile_sas=document.createElement("a")
     tile_sas.id="sas"
-    tile_sas.innerHTML="S.A.S"
+    tile_sas.innerHTML=" Security"
     var buton_back=document.createElement("a")
     buton_back.id="btn_desplegar"
     buton_back.setAttribute("href","/")

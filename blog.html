@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AH_Blog</title>
+    <title>NEXO_Blog</title>
     <link rel="icon" type="image/x-icon" href="img/logo1.png" >
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="/styless/style.css">
@@ -29,7 +29,7 @@
 
         <section id="more_cont">
 
-            <h4>Mas contenido</h4>
+            <h4>Más contenido</h4>
 
             <div id="content_post2">
              
@@ -42,7 +42,7 @@
         var posts=[
     
         post1={
-            "autor":"Daniela",
+            "autor":"bot",
             "icon":"https://img.freepik.com/fotos-premium/renderizacion-3d-linda-chica-dibujos-animados-gafas-aisladas-sobre-fondo-blanco_1308157-8781.jpg?w=740",
             "image":"https://static.wixstatic.com/media/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.jpg/v1/fill/w_1489,h_1278,al_c,q_90/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.webp",
             "date":"enero 25 de 2024",
@@ -157,7 +157,7 @@
     
         },
         post4={
-            "autor":"Daniela",
+            "autor":"bot",
             "icon":"https://img.freepik.com/fotos-premium/renderizacion-3d-linda-chica-dibujos-animados-gafas-aisladas-sobre-fondo-blanco_1308157-8781.jpg?w=740",
            "image":"https://www.niceforyou.com/sites/default/files/styles/600x370_crop/public/2024-05/n_app1030oa_out.jpg?itok=IrgPx3y0",
             "date":"Agosto 25 de 2024",
@@ -359,7 +359,10 @@
            late_post.innerHTML=" 5 min de lectura"
             var share_post=document.createElement("a")
           share_post.className="share_post"
-          share_post.innerHTML="<box-icon name='menu-alt-right'></box-icon>"
+          share_post.innerHTML="<box-icon name='menu-alt-right'></box-icon>";
+          share_post.onclick=function(){
+
+          }
 
 
           //////content post//////

@@ -544,10 +544,12 @@ position: relative;
 
 }
 .float_message img{
+    position: relative;
    margin-top:50px ;
     width: 150px;
-    height: 100px;
-    vertical-align: middle;
+    height: 120px;
+    
+    vertical-align:middle ;
 }
 .float_text{
     text-align: center;
@@ -667,7 +669,6 @@ position: relative;
     flex-direction: row;
     gap: 25px;
     margin: auto;
-    
     
 }
 #button_contact button{
@@ -871,6 +872,7 @@ footer p{
            
         }
        
+       
         #reactions_post box-icon{
             position: relative;
             width:fit-content;
@@ -922,6 +924,10 @@ footer p{
         #hashtag_post{
             font-weight: 800;
         }
+        #hashtag_post:hover{
+            color: red;
+        }
+        
         .other_post h3{
             color: #12458c;
             font-size: 25px;
