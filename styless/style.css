@@ -692,11 +692,12 @@ font-size: 18px;
     width: 93%;
    line-height: 30px;
 }
-#sub1 p{
+#sub1 p:nth-child(1){
     font-size: 45px;
-    color: #fbfcfc;
+    color: #fcfefe;
     font-weight: 700;
 }
+
 #sub1 :nth-child(2){
     font-size: 25px;
     color: #fbfcfc;
@@ -1143,6 +1144,24 @@ display: none;
         height: 220px;
     }
     
+
+    #sub1 p:nth-child(1){
+        font-size: 35px;
+        line-height: 35px;
+    }
+    
+    #sub1 :nth-child(2){
+        font-size: 25px;
+       
+        
+      
+    }
+    
+    #sub1 :nth-child(3){
+        font-size: 20px;
+        
+      
+    }
         .p_medio{
             font-size: 25px;
             width: 90%;}
