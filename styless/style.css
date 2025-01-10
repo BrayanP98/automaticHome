@@ -533,16 +533,13 @@ position: relative;
     display: flex;
     flex-direction: row;
 }
+
 #float_message.active{
     visibility: visible;
    
 
 }
-#float_messageDomo.active{
-    visibility: visible;
-   
 
-}
 .float_message img{
     position: relative;
    margin-top:50px ;
@@ -669,6 +666,7 @@ position: relative;
     position: relative;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 25px;
     margin: auto;
@@ -1073,6 +1071,11 @@ footer p{
            
             top: 50px;
            
+        }
+        #float_messageDomo.active{
+            visibility: hidden;
+           
+        
         }
      .float_message{
        
