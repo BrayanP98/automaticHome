@@ -27,6 +27,7 @@ body{
  font-size: 13px;
   vertical-align: middle;
    right: 0%;
+   cursor: help;
 }
 #phone{
     width: 15%;
@@ -729,7 +730,7 @@ position: relative;
     background: rgb(151, 151, 155);
     text-align: center;
     display: flex;
-    top: 55px;
+    top: 85px;
 }
 footer p{
     font-family: "Raleway", sans-serif;
@@ -1047,6 +1048,7 @@ footer p{
      }
      #ayuda{
         right: 3%;
+        
      }
 
      .items{

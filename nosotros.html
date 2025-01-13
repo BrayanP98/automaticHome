@@ -25,20 +25,62 @@
    </div>
 
   <section id="content_us">
-    <button id="pdf">descragar</button>
-    <a href="/documents/NexoSecurity- PORTAFOLIO.pdf" target="_blank" rel="noopener noreferrer">ver portafolio</a>
+   <div id="medios_portaf">
+    <h5>Portafolio</h5>
+    <button id="pdf">Descragar</button>
+    <a href="/documents/NexoSecurity- PORTAFOLIO.pdf" target="_blank" rel="noopener noreferrer">ver </a></div>
 
+  <div id="nosotros"> 
+    <h3>Nuestra Empresa</h3>
+    
     <p>Somos una empresa dedicada a brindar
-        soluciones de automatización y seguridad para
-        hogares y empresas. Ofrecemos servicios de
-        instalación, mantenimiento y reparación de
-        sistemas inteligentes que facilitan la vida diaria y
-        mejoran la seguridad. Nos comprometemos a
-        proporcionar un servicio de calidad,
-        adaptándonos a las necesidades específicas de
-        cada cliente para asegurar un entorno más
-        cómodo y protegido.
+    soluciones de automatización y seguridad para
+    instalación, mantenimiento y reparación
+    hogares y empresas. Ofrecemos servicios de
+    de sistemas inteligentes que facilitan la vida diaria y
+    mejoran la seguridad. Nos comprometemos a
+    proporcionar un servicio de calidad,
+    adaptándonos a las necesidades específicas de
+    cada cliente para asegurar un entorno más
+    cómodo y protegido
+    </p>
+
+</div>
+    <div id="vision">
+        <div>
+            <h3>Mision.</h3>
+        <p>
+            En NexoSecurity, nuestra misión es proporcionar
+soluciones integrales de automatización y
+seguridad para hogares y empresas,
+combinando innovación tecnológica y excelencia
+en el servicio. Nos comprometemos a mejorar la
+calidad de vida de nuestros clientes mediante
+la creación de espacios más seguros, eficientes
+y confortables, asegurando la tranquilidad
+y el bienestar en cada proyecto que
+emprendemos.
         </p>
+        </div>
+       <div>
+
+        <h3>Vision.</h3>
+        <p>
+            Ser líderes en el sector de la automatización
+del hogar y seguridad electrónica en América
+Latina, reconocidos por nuestra capacidad de
+transformar tanto viviendas como empresas
+en entornos inteligentes y altamente seguros.
+Aspiramos a establecer nuevos estándares de
+calidad y sostenibilidad, contribuyendo al
+desarrollo de comunidades más conectadas y
+tecnológicamente avanzadas.
+
+        </p>
+       </div>
+
+
+    </div>
     
   </section>
 </div>
@@ -46,6 +88,13 @@
 <style>
     body{
         margin: 1px;
+    }
+    .content{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+     
+        
     }
         #img_us{
             background-image: url("https://img.freepik.com/foto-gratis/vista-aerea-equipo-empresarial_53876-124515.jpg?w=1060&t=st=1723434847~exp=1723435447~hmac=f8afcd4aebf90620ffc6ebaa58e25f8e9fda8c08fc0316a98d3ab3a35b695748s");
@@ -64,12 +113,83 @@
             font-family: "Raleway", sans-serif;
          }
 
-         #content_us{
+
+           #medios_portaf{
+            position: fixed;
+            width: fit-content;
+            height: fit-content;
+          background-color: antiquewhite;
+            right: 15px;
+           margin: 0;
+          
+           }
+           #medios_portaf h5{
+            text-align: center;
+            font-size: 15px;
+           
+           
+           }
+           #medios_portaf a{
+            height: fit-content;
+            width: fit-content;
+            text-decoration: none;
+            
+            color: black;
+            
+           }
+           #medios_portaf button{
+           border:0;
+            color: black;
+            background-color:transparent;
+            cursor: alias;
+           }
+
+
+         .content #content_us{
             width: 100%;
-            height: 500px;
+            height: fit-content;
+            position: relative;
+            justify-content: center;
+           
+           
          }
+
+         #content_us #nosotros{
+            position: relative;
+            width: 50%;
+            height: fit-content;
+           text-align: justify;
+            margin: auto;
+         }
+         #content_us #nosotros h3{
+            text-align: center;
+         }
+         #vision{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+         }
+         #vision div {
+            width: 40%;
+            min-width: 250px;
+            text-align: center;
+
+         }
+         #vision p{
+            text-align: justify;
+         }
+
+
+
     </style>
 </body>
 
 <script src="/js/index.js"></script>
+<footer>
+    <p>Copyright 2024, ScaliwoodSoft All Rights Reserved</p>
+</footer>
 </html>
