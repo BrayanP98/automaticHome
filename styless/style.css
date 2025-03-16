@@ -48,14 +48,14 @@ body{
    
     transition: all 1s ease-out;
    overflow: hidden;
-   background-color: rgb(255, 255, 255);
+   background-color: rgba(142, 139, 139, 0.086);
    z-index: 99;
    position: absolute;
 }
 #logo{
    
-    width: 40px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
     
    
 }
@@ -75,20 +75,17 @@ body{
     vertical-align: middle;
     right: 5px;
 }
-#btn_desplegar{
-    
+#desplegable button{
+    position: absolute;
     border: none;
-    color: gray;
+  width: 30px;
+  height: 25spx;
     margin-left: 15px;
-    
+    top: 10px;
+    border-radius: 5px;
 
 }
-#desplegable button box-icon {
-    vertical-align: middle;
-    color: white;
-    position: relative;
-   
-}
+
 #menu.active{
     height: fit-content;
     transition: all 1s ease-out;
@@ -544,8 +541,9 @@ position: relative;
 .float_message img{
     position: relative;
    margin-top:50px ;
-    width: 150px;
-    height: 120px;
+    width: 160px;
+    height: 100px;
+    background-color: #68696c93;
     
     vertical-align:middle ;
 }

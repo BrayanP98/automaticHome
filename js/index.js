@@ -15,14 +15,14 @@ function crearMenu(){
     var menu_title=document.createElement("a")
     menu_title.id="titulo"
     menu_title.setAttribute("href","/")
-    menu_title.innerHTML="Nexo"
+    
     var tile_sas=document.createElement("a")
     tile_sas.id="sas"
-    tile_sas.innerHTML=" Security"
+  
     var buton_back=document.createElement("a")
     buton_back.id="btn_desplegar"
     buton_back.setAttribute("href","/")
-    buton_back.innerHTML="<box-icon name='arrow-back'></box-icon>"
+    buton_back.innerHTML="<box-icon name='arrow-back' color='white'></box-icon>"
     var menu_phone=document.createElement("a")
     menu_phone.id="phone"
     var menu_help=document.createElement("a")
@@ -34,7 +34,7 @@ function crearMenu(){
 
     desplegar.appendChild(menu_logo)
     desplegar.appendChild(menu_title)
-    desplegar.appendChild(tile_sas)
+   
     desplegar.appendChild(buton_back)
     desplegar.appendChild(menu_phone)
     desplegar.appendChild(menu_help)
